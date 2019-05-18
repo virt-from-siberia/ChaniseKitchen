@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Grid</title>
+
+
+    <?php require "header.php" ?>
+
+
+    <main>
+
+        <!--MODAL -->
+        <!-- <button type="button" class="btn btn-primary" >Large modal</button> -->
+
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <h2>Lorem, olor sit amet consectetur adipisicing elit. Vero, eos cum. Vero adipisci excepturi explicabo? Voluptatem debitis repellat suscipit praesentium a amet odit illo tenetur minima laudantium ipsam dolorum blanditiis maiores quisquam possimus exercitationem nisi vitae, qui commodi, optio voluptatibus. Sint corporis temporibus sunt dolores illo iusto totam vero soluta.
+                        audantium ipsam dolorum blanditiis maiores quisquam possimus exercitationem nisi vitae, qui commodi, optio voluptatibus. Sint corporis temporibus sunt dolores illo iusto totam vero soluta.
+                    </h2>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- CART -->
+        <div class="wrapper">
+            <div class="cart text-center wow bounceIn" data-toggle="modal" data-target=".bd-example-modal-lg">
+                <i class="fas fa-shopping-cart"></i>
+                <div class="sum wow  bounceIn">1000</div>
+            </div>
+        </div>
+
+
+        <section class="menu-block-header">
+            <div class="menu-header">
+                <div class="menu-header-content">
+                    <hr class="separator-line wow fadeInUp">
+                    <h2 class="menu-block-header  mt-4 text-white wow fadeInUp">Меню</h2>
+                </div>
+            </div>
+        </section>
+
+        <div class="separator">
+            <img class="mini-logo" src="img/miniLogo.png" alt="logo">
+        </div>
+
+        <section class="menu-body">
+            <div class="menu-body-content parallax-window" data-parallax="scroll" data-image-src="img/bg_4.jpg">
+                <div class="wrapper">
+
+                    <!-- //GENERATE BLOCK=========================================== -->
+                    <div class="goods-out-cold item-container">
+
+
+
+                    </div>
+
+                    <div class="goods-out-hot item-container">
+
+
+
+                    </div>
+                    <!-- //END GENERATE BLOCK=========================================== -->
+
+
+
+
+
+                    <!-- //END WRAPPER -->
+                </div>
+                <!-- //END menu-body-content -->
+            </div>
+
+        </section>
+    </main>
+
+    <?php require "footer-menu.php" ?>

@@ -1,0 +1,26 @@
+{
+    "201": {
+        "category": "cold",
+        "name": "мясо",
+        "weight": "400",
+        "description": "Lorem ipsum dolor sit amet coit. Aliquid, eum.",
+        "cost": 450,
+        "img": "apple.png"
+    },
+    "202": {
+        "category": "cold",
+        "name": "салат",
+        "weight": "200",
+        "description": "Lorem ipsum dolor sit aipisicing elit. Aliquid, eum.",
+        "cost": 250,
+        "img": "cherry.png"
+    },
+    "203": {
+        "category": "hot",
+        "name": "огурцы",
+        "weight": "220",
+        "description": "fgdfgdfgfdgdfgdf.",
+        "cost": 250,
+        "img": "cherry.png"
+    }
+}
