@@ -18,10 +18,7 @@
         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                    <h2>Lorem, olor sit amet consectetur adipisicing elit. Vero, eos cum. Vero adipisci excepturi explicabo? Voluptatem debitis repellat suscipit praesentium a amet odit illo tenetur minima laudantium ipsam dolorum blanditiis maiores quisquam possimus exercitationem nisi vitae, qui commodi, optio voluptatibus. Sint corporis temporibus sunt dolores illo iusto totam vero soluta.
-                        audantium ipsam dolorum blanditiis maiores quisquam possimus exercitationem nisi vitae, qui commodi, optio voluptatibus. Sint corporis temporibus sunt dolores illo iusto totam vero soluta.
-                    </h2>
-
+                <div class="mini-cart"></div>
                 </div>
             </div>
         </div>
@@ -74,6 +71,8 @@
                 </div>
                 <!-- //END menu-body-content -->
             </div>
+
+            <!-- <div class="mini-cart"></div> -->
 
         </section>
     </main>

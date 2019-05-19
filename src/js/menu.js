@@ -86,7 +86,21 @@ function addToCart() {
     } else {
         cart[id]++;  //ЕСЛИ ТАКОЙ ЕСТЬ ТО УВЕЛИЧИВАЕМ НА 1
     }
-    console.log(cart);
+    showMiniCart();
+    saveCart();
+}
+
+function saveCart() {
+    localStorage.setItem('cart', cart);
+}
+
+function showMiniCart() {
+    //показываю мини корзину
+    var out = '';
+    for (var key in cart) {
+        out += key + '---' + cart[key] + '<br>';
+    }
+    $('.mini-cart').html(out);
 }
 
 
