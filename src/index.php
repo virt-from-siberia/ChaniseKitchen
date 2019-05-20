@@ -225,7 +225,12 @@
 
             </div>
         </section>
-
-    </main>
-
-    <?php require "footer.php" ?>
+        <!-- Material input -->
+        <div class="md-form">
+            <input type="text" id="form1" class="form-control">
+            <label for="form1">Example label</label>
+        </div>
+        <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="updates" id="updates" value="1">
+            <label for="updates" class="form-check-label">Notify me about new updates</label>
+        </div </main> <?php require "footer.php" ?>

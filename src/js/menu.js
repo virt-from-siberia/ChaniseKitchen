@@ -7,13 +7,14 @@
 var cart = {}; //КОРЗИНА
 
 
+
 function init() {
     //ВЫВОД ТОВАРА
     $.getJSON("goodsCOLD.JSON", goodsOutCOLD);
     $.getJSON("goodsHOT.JSON", goodsOutHOT);
 
-
 }
+
 function goodsOutCOLD(data) {
     var out = '';
 
@@ -27,7 +28,7 @@ function goodsOutCOLD(data) {
         out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 wow fadeInUp text-center">`;
         out += `<h3 class="header-item text-center  mt-3 mb-3  wow fadeInRight">${data[key].name}</h3>`;
         //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ
-        out += `<p><img class="logoinstead" src="img/miniLogo.png" alt="${data[key].name}" ></p>`;
+        out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
         // out += `<p><img src="img/items/${data[key].img}" alt="${data[key].name}"></p>`;
         out += `<p class="weight-item text-center text-white wow fadeInUp">${data[key].weight}гр</p>`;
         out += `<p class="about-item text-center wow fadeInLeft">${data[key].description}.</p>`;
@@ -59,7 +60,7 @@ function goodsOutHOT(data) {
         out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 wow fadeInUp text-center">`;
         out += `<h3 class="header-item text-center  mt-3 mb-3  wow fadeInRight">${data[key].name}</h3>`;
         //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ
-        out += `<p><img class="logoinstead" src="img/miniLogo.png" alt="${data[key].name}" ></p>`;
+        out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
         // out += `<p><img src="img/items/${data[key].img}" alt="${data[key].name}"></p>`;
         out += `<p class="weight-item text-center text-white wow fadeInUp">${data[key].weight}гр</p>`;
         out += `<p class="about-item text-center wow fadeInLeft">${data[key].description}.</p>`;
@@ -75,7 +76,12 @@ function goodsOutHOT(data) {
     out += `</div>`;
     $('.goods-out-hot').html(out);
     $('.plus').on('click', addToCart);
+    $('.plus').on('click', animateCart);
+    $('.delite').on('click', animateCart);
+    $('.minus').on('click', animateCart);
+
 }
+
 
 function addToCart() {
     //ДОБОВЛЯЕМ ТОВАР В КОРЗИНУ
@@ -91,7 +97,7 @@ function addToCart() {
 }
 
 function saveCart() {
-    localStorage.setItem('cart', cart);
+    localStorage.setItem('cart', JSON.stringify(cart));
 }
 
 function showMiniCart() {
@@ -100,16 +106,25 @@ function showMiniCart() {
     for (var key in cart) {
         out += key + '---' + cart[key] + '<br>';
     }
-    $('.mini-cart').html(out);
+    $('.mini-cart-items').html(out);
+}
+
+function loadCart() {
+    if (localStorage.getItem('cart')) {
+        cart = JSON.parse(localStorage.getItem('cart'));
+        showMiniCart();
+    }
+}
+
+function animateCart() {
+
+    $('.cart').fadeOut(30).delay(10).fadeIn(300);
+
+
 }
 
 
-
-
 $(document).ready(function () {
-
     init();
-
-
-
+    loadCart();
 });

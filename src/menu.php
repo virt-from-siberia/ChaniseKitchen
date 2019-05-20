@@ -18,7 +18,13 @@
         <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
-                <div class="mini-cart"></div>
+                    <div class="mini-cart">
+                        <h3>Ваши покупки</h3>
+                        <div class="mini-cart-items">
+                            <!-- //GENERATE CONTENT -->
+                        </div>
+                        <button type="button" class="btn btn-success btn-lg ">Оформить заказ</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -36,7 +42,7 @@
             <div class="menu-header">
                 <div class="menu-header-content">
                     <hr class="separator-line wow fadeInUp">
-                    <h2 class="menu-block-header  mt-4 text-white wow fadeInUp">Меню</h2>
+                    <h2 class="menu-block-header  mt-4 text-white wow fadeInUp">Наше Меню</h2>
                 </div>
             </div>
         </section>
