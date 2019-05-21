@@ -53,10 +53,10 @@ function goodsOutHOT(data) {
 
     out += `<div class= "item-container-header pt-3">`;
     out += `<hr class="separator-line wow fadeInUp  mt-5"><h2 class="text-center text-white mt-5 mb-5 wow fadeInUp">Горячие блюда</h2>`;
-    out += `<div class="items row">`;
+    // out += `<div class="items row">`;
     out += `<div class="items row">`;
     for (var key in data) {
-        out += ``
+        out += ``;
         out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 wow fadeInUp text-center">`;
         out += `<h3 class="header-item text-center  mt-3 mb-3  wow fadeInRight">${data[key].name}</h3>`;
         //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ

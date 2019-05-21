@@ -50,8 +50,9 @@
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="./js/js.js"></script>
 <script src="./js/cart.js"></script>
+<script src="./js/js.js"></script>
+
 
 </body>
 
