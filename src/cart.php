@@ -16,22 +16,28 @@
                         <br class="hide-small-screen">
                         <br class="hide-small-screen">
                         <div class="cart-body-header mt-5">
-                            <h2 class="text-center "> Ваши покупки</h2>
+                            <h2 class="text-center wow fadeInUp "> Ваши покупки</h2>
                         </div>
-                        
+
+
+                        <!-- // START OF GENERATE goods-out-cold -->
                         <div class="goods-out-cold item-container">
-                       </div>
 
-                        <div class="goods-out-hot item-container">
                         </div>
+                        <!-- // END OF GENERATE goods-out-cold -->
 
-                        
+                        <div class="common-cost-orders text-center wow fadeInUp">
+                            <p class="common-cost-orders-article ">Обшая сумма заказа</p>
+                            <p class="common-cost-orders-summ "></p>
+                        </div>
                     </div>
                 </div>
+
+
+            </div>
+            </div>
             </div>
         </section>
-
-
 
     </main>
 

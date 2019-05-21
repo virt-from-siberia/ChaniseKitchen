@@ -34,9 +34,9 @@ function goodsOutCOLD(data) {
         out += `<p class="about-item text-center wow fadeInLeft">${data[key].description}.</p>`;
         out += `<p class="about-cost text-center wow fadeInUp"> ${data[key].cost} руб </p>`;
         out += `<div class="buttons">`;
-        out += `<button type="button" class="minus btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-minus-square"></i></button>`;
-        out += ` <button type="button" class="delite btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-times-circle"></i></button>`;
-        out += `<button type="button" class="plus btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-plus-square"></i></button>`;
+        out += `<button type="button" class="minus coldMinus btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-minus-square"></i></button>`;
+        out += ` <button type="button" class="delite coldDelite btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-times-circle"></i></button>`;
+        out += `<button type="button" class="plus btn coldPlus btn-outline btn-sm" data-id="${key}"><i class=" far fa-plus-square"></i></button>`;
         out += `</div>`;
         out += `</div>`;
 
@@ -45,7 +45,12 @@ function goodsOutCOLD(data) {
     out += `</div>`;
     out += `</div>`;
     $('.goods-out-cold').html(out);
-    $('.plus').on('click', addToCart);
+    $('.coldPlus').on('click', addToCart);
+    $('.coldPlus').on('click', animateCart);
+    $('.coldDelite').on('click', deliteCart);
+    $('.coldDelite').on('click', animateCart);
+    $('.coldMinus').on('click', minusCart);
+    $('.coldMinus').on('click', animateCart);
 }
 
 function goodsOutHOT(data) {
@@ -66,35 +71,56 @@ function goodsOutHOT(data) {
         out += `<p class="about-item text-center wow fadeInLeft">${data[key].description}.</p>`;
         out += `<p class="about-cost text-center wow fadeInUp"> ${data[key].cost} руб </p>`;
         out += `<div class="buttons">`;
-        out += `<button type="button" class="minus btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-minus-square"></i></button>`;
-        out += ` <button type="button" class="delite btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-times-circle"></i></button>`;
-        out += `<button type="button" class="plus btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-plus-square"></i></button>`;
+        out += `<button type="button" class="minus hotMinus btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-minus-square"></i></button>`;
+        out += ` <button type="button" class="delite hotDelite btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-times-circle"></i></button>`;
+        out += `<button type="button" class="plus btn hotPlus btn-outline btn-sm" data-id="${key}"><i class=" far fa-plus-square"></i></button>`;
         out += `</div>`;
         out += `</div>`;
 
     }
     out += `</div>`;
     $('.goods-out-hot').html(out);
-    $('.plus').on('click', addToCart);
-    $('.plus').on('click', animateCart);
-    $('.delite').on('click', animateCart);
-    $('.minus').on('click', animateCart);
+    $('.hotPlus').on('click', addToCart);
+    $('.hotPlus').on('click', animateCart);
+    $('.hotDelite').on('click', deliteCart);
+    $('.hotDelite').on('click', animateCart);
+    $('.hotMinus').on('click', minusCart);
+    $('.hotMinus').on('click', animateCart);
 
 }
 
 
 function addToCart() {
-    //ДОБОВЛЯЕМ ТОВАР В КОРЗИНУ
     var id = $(this).attr('data-id');
-    console.log(id);
     if (cart[id] == undefined) {
-        cart[id] = 1; //ЕСЛИ В КОРЗИНЕ НЕТ ТОВАРА С ИНДЕФИКАТОРОМ ID ТО ДОБОВЛЯЕМ 1
+        cart[id] = 1;
     } else {
-        cart[id]++;  //ЕСЛИ ТАКОЙ ЕСТЬ ТО УВЕЛИЧИВАЕМ НА 1
+        cart[id]++;
     }
     showMiniCart();
     saveCart();
 }
+
+function deliteCart() {
+    var id = $(this).attr('data-id');
+    delete cart[id];
+    showMiniCart();
+    saveCart();
+}
+
+function minusCart() {
+    var id = $(this).attr('data-id');
+    console.log(cart[id]);
+    if (cart[id] == undefined || cart[id] == 0 || cart[id] == null) {
+        delete cart[id];
+    } else {
+        cart[id]--;
+    }
+    showMiniCart();
+    saveCart();
+}
+
+
 
 function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
@@ -102,11 +128,20 @@ function saveCart() {
 
 function showMiniCart() {
     //показываю мини корзину
-    var out = '';
-    for (var key in cart) {
-        out += key + '---' + cart[key] + '<br>';
-    }
-    $('.mini-cart-items').html(out);
+
+    $.getJSON('commonGoods.JSON', function (dataMinCart) {
+        var goodsMinCart = dataMinCart;
+        var commonSummmMinCart = 0;
+        var out = '';
+        for (var key in cart) {
+            out += goodsMinCart[key].name + ' --- ' + cart[key] + '<br>';
+            commonSummmMinCart = commonSummmMinCart + (goodsMinCart[key].cost * cart[key]);
+        }
+        out += 'Сумма заказа --- ' + commonSummmMinCart;
+        $('.mini-cart-items').html(out);
+        $('.sum').html(commonSummmMinCart);
+    });
+
 }
 
 function loadCart() {
@@ -119,7 +154,6 @@ function loadCart() {
 function animateCart() {
 
     $('.cart').fadeOut(30).delay(10).fadeIn(300);
-
 
 }
 

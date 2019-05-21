@@ -10,7 +10,7 @@
     <?php require "header.php" ?>
 
     <div class="header-img">
-        <img src="img/logo-boring.jpg" alt="">
+        <img src="img/logo-boring.jpg" alt="заголовок">
     </div>
 
     <main>
@@ -34,11 +34,11 @@
                     ДОСТАВКА
                 </h2>
                 <div class="del-icon pb-3 pt-3 wow fadeInUp">
-                    <img src="img/imgdelivery-.png" alt="">
+                    <img src="img/imgdelivery-.png" alt="доставка">
                 </div>
 
 
-                <div class="about_delivery card">
+                <div class="about_delivery card" id="delivery">
 
                     <div class="owl-carousel slide-one owl-theme">
 
@@ -149,12 +149,11 @@
 
                 <div class="container">
                     <div class="row justify-content-center">
-
                         <div class="col-md-6 col-10 mt-3 mb-3 wow fadeInUp">
-                            <a href="menu.php">
+                            <a href="menu.php#hot-dishes">
                                 <div class="box">
                                     <div class="imgBox">
-                                        <img src="./img/hot.jpg" alt="a">
+                                        <img src="./img/hot.jpg" alt="Горячие блюда">
                                     </div>
                                     <div class="content">
                                         <p class="pepe text-center">Горячие блюда</p>
@@ -166,7 +165,7 @@
                         </div>
 
                         <div class="col-md-6 col-10 mt-3 mb-3 wow fadeInUp">
-                            <a href="menu.php">
+                            <a href="menu.php#cold-dishes">
                                 <div class="box">
                                     <div class="imgBox">
                                         <img src="./img/salad.jpg" alt="a">
@@ -192,38 +191,38 @@
 
                 <div class="owl-carousel slide-fourd owl-theme">
                     <div class="item wow fadeIn">
-                        <a data-fancybox="gallery" href="img/ChinaFood/1.jpg"><img src="img/ChinaFood/1.jpg"></a>
+                        <a data-fancybox="gallery" href="img/ChinaFood/1.jpg"><img src="img/ChinaFood/1.jpg" alt="картинка"></a>
                     </div>
                     <div class="item wow fadeIn">
-                        <a data-fancybox="gallery" href="img/ChinaFood/2.jpg"><img src="img/ChinaFood/2.jpg"></a>
+                        <a data-fancybox="gallery" href="img/ChinaFood/2.jpg"><img src="img/ChinaFood/2.jpg" alt="картинка"></a>
                     </div>
                     <div class="item wow fadeIn">
-                        <a data-fancybox="gallery" href="img/ChinaFood/3.jpg"><img src="img/ChinaFood/3.jpg"></a>
+                        <a data-fancybox="gallery" href="img/ChinaFood/3.jpg"><img src="img/ChinaFood/3.jpg" alt="картинка"></a>
                     </div>
                     <div class="item wow fadeIn">
-                        <a data-fancybox="gallery" href="img/ChinaFood/4.jpg"><img src="img/ChinaFood/4.jpg"></a>
+                        <a data-fancybox="gallery" href="img/ChinaFood/4.jpg"><img src="img/ChinaFood/4.jpg" alt="картинка"></a>
                     </div>
                     <div class="item wow fadeIn">
-                        <a data-fancybox="gallery" href="img/ChinaFood/5.jpg"><img src="img/ChinaFood/5.jpg"></a>
+                        <a data-fancybox="gallery" href="img/ChinaFood/5.jpg"><img src="img/ChinaFood/5.jpg" alt="картинка"></a>
                     </div>
                     <div class="item wow fadeIn">
-                        <a data-fancybox="gallery" href="img/ChinaFood/6.jpg"><img src="img/ChinaFood/6.jpg"></a>
+                        <a data-fancybox="gallery" href="img/ChinaFood/6.jpg"><img src="img/ChinaFood/6.jpg" alt="картинка"></a>
                     </div>
                     <div class="item wow fadeIn">
-                        <a data-fancybox="gallery" href="img/ChinaFood/7.jpg"><img src="img/ChinaFood/7.jpg"></a>
+                        <a data-fancybox="gallery" href="img/ChinaFood/7.jpg"><img src="img/ChinaFood/7.jpg" alt="картинка"></a>
                     </div>
                     <div class="item wow fadeIn">
-                        <a data-fancybox="gallery" href="img/ChinaFood/8.jpg"><img src="img/ChinaFood/8.jpg"></a>
+                        <a data-fancybox="gallery" href="img/ChinaFood/8.jpg"><img src="img/ChinaFood/8.jpg" alt="картинка"></a>
                     </div>
                     <div class="item wow fadeIn">
-                        <a data-fancybox="gallery" href="img/ChinaFood/9.jpg"><img src="img/ChinaFood/9.jpg"></a>
+                        <a data-fancybox="gallery" href="img/ChinaFood/9.jpg"><img src="img/ChinaFood/9.jpg" alt="картинка"></a>
                     </div>
                     <div class="item wow fadeIn">
-                        <a data-fancybox="gallery" href="img/ChinaFood/10.jpg"><img src="img/ChinaFood/10.jpg"></a>
+                        <a data-fancybox="gallery" href="img/ChinaFood/10.jpg"><img src="img/ChinaFood/10.jpg" alt="картинка"></a>
                     </div>
                 </div>
 
             </div>
         </section>
-    
+
         <?php require "footer.php" ?>

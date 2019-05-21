@@ -23,7 +23,9 @@
                         <div class="mini-cart-items">
                             <!-- //GENERATE CONTENT -->
                         </div>
-                        <button type="button" class="btn btn-success btn-lg ">Оформить заказ</button>
+                        <button type="button" class="btn btn-success btn-lg ">
+                            <a href="cart.php">Оформить заказ</a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -33,7 +35,7 @@
         <div class="wrapper">
             <div class="cart text-center wow bounceIn" data-toggle="modal" data-target=".bd-example-modal-lg">
                 <i class="fas fa-shopping-cart"></i>
-                <div class="sum wow  bounceIn">1000</div>
+                <div class="sum wow  bounceIn">0</div>
             </div>
         </div>
 
@@ -56,13 +58,13 @@
                 <div class="wrapper">
 
                     <!-- //GENERATE BLOCK=========================================== -->
-                    <div class="goods-out-cold item-container">
+                    <div class="goods-out-cold item-container" id="cold-dishes">
 
 
 
                     </div>
 
-                    <div class="goods-out-hot item-container">
+                    <div class="goods-out-hot item-container" id="hot-dishes">
 
 
 
