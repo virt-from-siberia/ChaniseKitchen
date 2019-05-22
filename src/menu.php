@@ -24,7 +24,7 @@
                             <!-- //GENERATE CONTENT -->
                         </div>
                         <button type="button" class="btn btn-success btn-lg ">
-                            <a href="cart.php">Оформить заказ</a>
+                            <a href="cart.php">Редактировать/Оформить заказ</a>
                         </button>
                     </div>
                 </div>

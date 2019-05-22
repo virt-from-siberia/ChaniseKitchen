@@ -55,7 +55,7 @@ function showCart() {
         $('.delite').on('click', delGoods);
         $('.minus').on('click', minusGoods);
         $('.plus').on('click', plusGoods);
-        $('.common-cost-orders-summ').html(commonSum +  'руб');
+        $('.common-cost-orders-summ').html(commonSum + 'руб');
     });
 }
 
@@ -88,16 +88,72 @@ function minusGoods() {
 
 }
 
-
-
-
-
+function isEmpty(object) {
+    for (key in object)
+        if (object.hasOwnProperty(key)) return true;
+    return false;
+}
 
 function saveCart() {
     localStorage.setItem('cart', JSON.stringify(cart));
 }
 
+function getime() {
+    var currentdate = new Date();
+    var datetime = "Дата заказа :" + currentdate.getDate() + "."
+        + (currentdate.getMonth() + 1) + "."
+        + currentdate.getFullYear() + " Время заказа :"
+        + currentdate.getHours() + ":"
+        + currentdate.getMinutes() + ":"
+        + currentdate.getSeconds();
+    return datetime;
+}
+
+function sendForm() {
+    var ename = $('#ename').val();
+    var ephone = $('#ephone').val();
+    var eadrres = $('#eadrres').val();
+    var edescription = $('#edescription').val();
+    if (ename != '' && ephone != '' && eadrres != '') {
+        if (isEmpty(cart)) {
+            var datetime = '';
+            datetime = getime();
+            $.post(
+                "mail.php",
+                {
+                    "ename": ename,
+                    "ephone": ephone,
+                    "eadrres": eadrres,
+                    "edescription": edescription,
+                    "cart": cart,
+                    "datetime": datetime
+                },
+                function () {
+                    $('#exampleModalCenter-3').modal({
+                        show: true
+                    });
+                    $('.close-order').on('click', function () {
+                        localStorage.clear();
+                        window.location.href = 'http://virtyoz777.beget.tech/index.php';
+                    });
+                }
+            );
+        } else {
+            $('#exampleModalCenter').modal({
+                show: true
+            });
+        }
+    } else {
+        $('#exampleModalCenter-2').modal({
+            show: true
+        });
+    }
+}
+
+
+
 $(document).ready(function () {
 
     loadCart();
+    $('.send-form').on('click', sendForm);
 });
