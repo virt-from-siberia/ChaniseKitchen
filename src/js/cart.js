@@ -134,7 +134,7 @@ function sendForm() {
                     });
                     $('.close-order').on('click', function () {
                         localStorage.clear();
-                        window.location.href = 'http://virtyoz777.beget.tech/index.php';
+                        window.location.href = 'http://vkuskitaya.ru/index.php';
                     });
                 }
             );

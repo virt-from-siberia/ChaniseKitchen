@@ -25,15 +25,23 @@ foreach ($cart as $id => $count) {
 $message .= 'Всего сумма заказа: ' . $sum;
 // print_r($message);
 
-$to = 'alonso85@mail.ru' . ','; //не забудь поменять!
+$to = 'cool-spart2010@mail.ru' . ','; //не забудь поменять!
+$to2 = 'alonso85@mail.ru' . ',';
 // $to .= $_POST['email'];
 $spectext = '<!DOCTYPE HTML><html><head><title>Заказ</title></head><body>';
 $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
 $m = mail($to, 'Заказ в магазине', $spectext . $message . '</body></html>', $headers);
+$m2 = mail($to, 'Заказ в магазине', $spectext . $message . '</body></html>', $headers);
 
 if ($m) {
+    echo 1;
+} else {
+    echo 0;
+}
+
+if ($m2) {
     echo 1;
 } else {
     echo 0;

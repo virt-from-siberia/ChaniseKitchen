@@ -36,7 +36,7 @@ function goodsOutCOLD(data) {
         out += `<div class="buttons">`;
         // out += `<button type="button" class="minus coldMinus btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-minus-square"></i></button>`;
         // out += ` <button type="button" class="delite coldDelite btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-times-circle"></i></button>`;
-        out += `<button type="button" class="plus btn coldPlus btn-outline btn-sm" data-id="${key}"><i class=" far fa-plus-square"></i></button>`;
+        out += `<button type="button" class="plus btn coldPlus btn-outline btn-sm" data-id="${key}"><p>добавить</p><i class=" far fa-plus-square"></i></button>`;
         out += `</div>`;
         out += `</div>`;
 
@@ -67,13 +67,14 @@ function goodsOutHOT(data) {
         //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ
         out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
         // out += `<p><img src="img/items/${data[key].img}" alt="${data[key].name}"></p>`;
-        out += `<p class="weight-item text-center text-white wow fadeInUp">${data[key].weight}гр</p>`;
+        out += `<p class="weight-item text-center wow fadeInUp">${data[key].weight}гр</p>`;
         out += `<p class="about-item text-center wow fadeInLeft">${data[key].description}.</p>`;
         out += `<p class="about-cost text-center wow fadeInUp"> ${data[key].cost} руб </p>`;
         out += `<div class="buttons">`;
         // out += `<button type="button" class="minus hotMinus btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-minus-square"></i></button>`;
         // out += ` <button type="button" class="delite hotDelite btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-times-circle"></i></button>`;
-        out += `<button type="button" class="plus btn hotPlus btn-outline btn-sm" data-id="${key}"><i class=" far fa-plus-square"></i></button>`;
+        // out += ` <button type="button" class="delite  btn btn-outline btn-sm" data-id="${key}"></button>`;
+        out += `<button type="button" class="plus btn hotPlus btn-outline btn-sm" data-id="${key}"><p>добавить</p><i class=" far fa-plus-square"></i></button>`;
         out += `</div>`;
         out += `</div>`;
 

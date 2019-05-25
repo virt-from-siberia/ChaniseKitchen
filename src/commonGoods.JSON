@@ -1,50 +1,290 @@
 {
     "201": {
-        "category": "cold",
-        "name": "мясо",
+        "category": "hot",
+        "name": "Картофель фри по китайский",
         "weight": "400",
-        "description": "Lorem ipsum dolor sit amet coit. Aliquid, eum.",
-        "cost": 450,
+        "description": "картофель, масло, специи",
+        "cost": 190,
         "img": "apple.png"
     },
     "202": {
-        "category": "cold",
-        "name": "салат",
-        "weight": "200",
-        "description": "Lorem ipsum dolor sit aipisicing elit. Aliquid, eum.",
-        "cost": 250,
+        "category": "hot",
+        "name": "Бао цзы-позы",
+        "weight": "100",
+        "description": "мука, фапш мясной, специи. подаются с соевым соусом и чесноком",
+        "cost": 75,
         "img": "cherry.png"
     },
     "203": {
         "category": "hot",
-        "name": "огурцы",
-        "weight": "220",
-        "description": "fgdfgdfgfdgdfgdf.",
-        "cost": 250,
+        "name": "сао цзы-пельмени",
+        "weight": "300",
+        "description": "мука, фапш мясной, специи. подаются с соевым соусом и чесноком",
+        "cost": 210,
+        "img": "cherry.png"
+    },
+    "204": {
+        "category": "hot",
+        "name": "суп - лапша с беконом",
+        "weight": "350",
+        "description": "бекон, лапша, помидор, яйцо, специи.",
+        "cost": 80,
+        "img": "cherry.png"
+    },
+    "205": {
+        "category": "hot",
+        "name": "суп - лапша с курицей",
+        "weight": "350",
+        "description": "курица, лапша, грибы древесные, помидор, яйцо, специи.",
+        "cost": 70,
+        "img": "cherry.png"
+    },
+    "206": {
+        "category": "hot",
+        "name": "суп - мясной",
+        "weight": "350",
+        "description": "бекон/свинина/говядина/курица, фунчеза, морковь, огурец, лук, специи",
+        "cost": 75,
+        "img": "cherry.png"
+    },
+    "207": {
+        "category": "hot",
+        "name": "габаджоу",
+        "weight": "500",
+        "description": "свинина, морковь , перец болграский, томатная паста, лук, специи",
+        "cost": 380,
+        "img": "cherry.png"
+    },
+    "208": {
+        "category": "hot",
+        "name": "мясо - веревочка",
+        "weight": "500",
+        "description": "свинина, морковь ,грибы древесные, перец болграский, лук, специи",
+        "cost": 380,
+        "img": "cherry.png"
+    },
+    "209": {
+        "category": "hot",
+        "name": "свинина с ананасом",
+        "weight": "500",
+        "description": "свинина, ананас,  перец болграский , чеснок, томатная паста, масло, специи",
+        "cost": 380,
+        "img": "cherry.png"
+    },
+    "210": {
+        "category": "hot",
+        "name": "свинина с шампиньонами",
+        "weight": "500",
+        "description": "свинина, грибы древесные, шампиньоны, лцк,  перец болграский , чеснок,  масло",
+        "cost": 350,
+        "img": "cherry.png"
+    },
+    "211": {
+        "category": "hot",
+        "name": "стрелки чеснока",
+        "weight": "500",
+        "description": "свинина, чеснок зеленый, масло, специии",
+        "cost": 320,
+        "img": "cherry.png"
+    },
+    "212": {
+        "category": "hot",
+        "name": "жареная лапша с мясом",
+        "weight": "500",
+        "description": "свинина, лапша крахмальная, грибы древесные, лук, перец болгарский, морковь, масло, специи",
+        "cost": 310,
+        "img": "cherry.png"
+    },
+    "213": {
+        "category": "hot",
+        "name": "жареная лапша с курицей",
+        "weight": "500",
+        "description": "курица, лапша крахмальная, грибы древесные, лук, перец болгарский, морковь, масло",
+        "cost": 300,
+        "img": "cherry.png"
+    },
+    "214": {
+        "category": "hot",
+        "name": "жареная лапша с кальмаром",
+        "weight": "500",
+        "description": "кальмар, лапша крахмальная, грибы древесные, лук, морковь, масло, специи",
+        "cost": 330,
+        "img": "cherry.png"
+    },
+    "215": {
+        "category": "hot",
+        "name": "кольца кальмаров",
+        "weight": "200",
+        "description": "кальмар, сухари, масло, специи",
+        "cost": 300,
+        "img": "cherry.png"
+    },
+    "216": {
+        "category": "hot",
+        "name": "баклажан со свининой - коробочки",
+        "weight": "500",
+        "description": "свинина, баклажан, масло, специи",
+        "cost": 300,
+        "img": "cherry.png"
+    },
+    "217": {
+        "category": "hot",
+        "name": "масо с баклажанами",
+        "weight": "500",
+        "description": "свинина, перец болгарский ,баклажан, лук, чеснок, масло, специи",
+        "cost": 360,
+        "img": "cherry.png"
+    },
+    "218": {
+        "category": "hot",
+        "name": "масо с баклажанами",
+        "weight": "500",
+        "description": "свинина, перец болгарский ,баклажан, лук, чеснок, масло, специи",
+        "cost": 360,
+        "img": "cherry.png"
+    },
+    "219": {
+        "category": "hot",
+        "name": "масо с баклажанами",
+        "weight": "500",
+        "description": "курица, перец болгарский ,баклажан, лук, чеснок, масло, специи",
+        "cost": 350,
+        "img": "cherry.png"
+    },
+    "220": {
+        "category": "hot",
+        "name": "баклажаны с картофелем",
+        "weight": "500",
+        "description": "баклажан, картофель,  перец болгарский , лук, чеснок, масло, специи",
+        "cost": 310,
+        "img": "cherry.png"
+    },
+    "221": {
+        "category": "hot",
+        "name": "куриная грудка в сухарях",
+        "weight": "250",
+        "description": "курица, сухари , масло, специи",
+        "cost": 360,
+        "img": "cherry.png"
+    },
+    "222": {
+        "category": "hot",
+        "name": "куриные крылья в панировке",
+        "weight": "300",
+        "description": "куриные крылья, масло, специи",
+        "cost": 320,
+        "img": "cherry.png"
+    },
+    "223": {
+        "category": "hot",
+        "name": "рис с яйцом",
+        "weight": "500",
+        "description": "рис, яйцо, масло, специи",
+        "cost": 160,
+        "img": "cherry.png"
+    },
+    "224": {
+        "category": "hot",
+        "name": "рис с овощами и ветчиной",
+        "weight": "500",
+        "description": "рис, яйцо, огурец, морковь, ветчина,  масло, специи",
+        "cost": 200,
+        "img": "cherry.png"
+    },
+    "225": {
+        "category": "hot",
+        "name": "картофель фри с овощами и арахисом",
+        "weight": "400",
+        "description": "картофель, перец болгарский, арахис,  масло, специи",
+        "cost": 320,
         "img": "cherry.png"
     },
     "101": {
         "category": "cold",
-        "name": "мясо",
-        "weight": "400",
-        "description": "Lorem ipsum dolor sit amet coit. Aliquid, eum.",
-        "cost": 450,
+        "name": "салат из куриных желудков",
+        "weight": "300",
+        "description": "желудки куриные, огурец, морковь, чеснок, лук, масло, специи",
+        "cost": 300,
         "img": "apple.png"
     },
     "102": {
         "category": "cold",
-        "name": "салат",
-        "weight": "200",
-        "description": "Lorem ipsum dolor sit aipisicing elit. Aliquid, eum.",
-        "cost": 250,
+        "name": "салат из свиных ушей",
+        "weight": "300",
+        "description": "уши свеные, морковь, помидор, огурец, чеснок, лук, масло, специи",
+        "cost": 350,
         "img": "cherry.png"
     },
     "103": {
-        "category": "hot",
-        "name": "огурцы",
-        "weight": "220",
-        "description": "fgdfgdfgfdgdfgdf.",
+        "category": "cold",
+        "name": "салат - битые огурцы",
+        "weight": "300",
+        "description": "огурец, чеснок, масло, специи.",
+        "cost": 200,
+        "img": "cherry.png"
+    },
+    "104": {
+        "category": "cold",
+        "name": "салат овощной с майонезом",
+        "weight": "300",
+        "description": "огурец, помидор, лук, майонез, специи.",
+        "cost": 350,
+        "img": "cherry.png"
+    },
+    "105": {
+        "category": "cold",
+        "name": "китайский салат",
+        "weight": "300",
+        "description": "фунчеза, грибы древесные, морковь, огурец, капуста пекинская, чеснок, специи.",
         "cost": 250,
+        "img": "cherry.png"
+    },
+    "106": {
+        "category": "cold",
+        "name": "китайский салат с мясом",
+        "weight": "300",
+        "description": "фунчеза, свинина, грибы древесные, морковь, огурец, капуста пекинская, чеснок.",
+        "cost": 280,
+        "img": "cherry.png"
+    },
+    "107": {
+        "category": "cold",
+        "name": "салат из языка с майонезом",
+        "weight": "300",
+        "description": "язык говяжий, морковь, огурец, помидор, лук, майонез, специи.",
+        "cost": 390,
+        "img": "cherry.png"
+    },
+    "108": {
+        "category": "cold",
+        "name": "салат из языка",
+        "weight": "300",
+        "description": "язык говяжий, морковь, огурец, помидор, лук, специи.",
+        "cost": 350,
+        "img": "cherry.png"
+    },
+    "109": {
+        "category": "cold",
+        "name": "салат из кальмаров с майонезом",
+        "weight": "300",
+        "description": "кальмар, майонез, огурец, морковь, лук, специи.",
+        "cost": 370,
+        "img": "cherry.png"
+    },
+    "110": {
+        "category": "cold",
+        "name": "салат масной с арахисом",
+        "weight": "300",
+        "description": "говядина, арахис , огурец, морковь, лук, масло, чеснок,  специи.",
+        "cost": 380,
+        "img": "cherry.png"
+    },
+    "111": {
+        "category": "cold",
+        "name": "салат из огурца и мяса",
+        "weight": "300",
+        "description": "говядина, огурец, морковь, лук, масло, чеснок,  специи.",
+        "cost": 390,
         "img": "cherry.png"
     }
 }

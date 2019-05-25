@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Grid</title>
+    <title>Вкус Китая - доставка  китайской кухни в Чите.</title>
+    <meta name="yandex-verification" content="1f9cfed6824c7fa8" />
+    <meta name="description" content="Доставка Китайской кухни в городе Чита, Китайская кухня Чита, Заказ еды , заказ на дом, Заказ еды в Чите">
+    <meta name="keywords" content="Вкус Китая чита, Китайская кухня , доставка еды в г. Чита, доставка китайской еды, Чита, заказ на дом , бесплатная доставка. Заказ еды в Чите, заказать Китайскую кухню">
 
 
     <?php require "header.php" ?>
@@ -18,6 +21,8 @@
         <section>
             <div class="about parallax-window" data-parallax="scroll" data-image-src="img/bg.jpg">
                 <div class="wrapper">
+                    <h1 class="wow fadeInUp text-center  
+                text-white pt-5"> Доставка Китайской кухни в Чите</h1>
                     <h2 class="wow fadeInUp text-center article 
                 text-white pt-5">
                         Мы готовим для Вас вкусную и полезную еду по оригинальным рецептам китайской кухни. У нас

@@ -80,6 +80,25 @@ body {
     width: 100%;
     height: 300px;
 
+    h1 {
+
+        font-size: 30px;
+        text-shadow: 2px 2px 5px black;
+
+        .md-block( {
+                font-size: 30px;
+                text-shadow: 2px 2px 5px black;
+            }
+
+        );
+
+        .sm-block( {
+                font-size: 16px;
+            }
+
+        );
+    }
+
     .article {
         font-size: 30px;
         text-shadow: 2px 2px 5px black;
@@ -1143,7 +1162,7 @@ ul li a:hover:after {
     z-index: 1;
 
 
-    h2 {
+    h1 {
         font-size: 50px;
         text-shadow: 2px 2px 5px black;
 
@@ -1163,18 +1182,17 @@ ul li a:hover:after {
 .menu-body-content {
 
 
-    // .sm-block( {
-    //         background: url(../img/bg_4.jpg) !important;
-    //         background-size: cover;
-    //         background-attachment: fixed !important;
-    //     }
 
-    // );
+    background: url(../img/bg_4.jpg) !important;
+    background-size: cover;
+    background-attachment: fixed !important;
+
 
     .sm-block( {
             //    background: url('../img/123.jpg')!important;
             //    background-size: cover!important;
-            background-image: linear-gradient(to top, #1f0000, #270405, #2e060b, #370610, #410415, #400415, #400514, #3f0514, #35070f, #2b070a, #230405, #190000) !important;
+            // background-image: linear-gradient(to top, #1f0000, #270405, #2e060b, #370610, #410415, #400415, #400514, #3f0514, #35070f, #2b070a, #230405, #190000) !important;
+            background-image: linear-gradient(to right, #570505, #670407, #770307, #870107, #980005, #960006, #940006, #920007, #7e0009, #69010a, #550207, #420303) !important;
         }
 
     );
@@ -1233,7 +1251,7 @@ ul li a:hover:after {
                 padding: 5px;
                 background: rgba(255, 0, 0, 0.191);
                 border-radius: 5px;
-                font-size: 25px;
+                font-size: 20px;
 
             }
 
@@ -1249,17 +1267,30 @@ ul li a:hover:after {
 
             .weight-item {
                 margin-top: 5px;
+                color: orange;
+                font-size: 20px;
+                opacity: 0.8;
+
+                &:hover {
+
+                    opacity: 1;
+                }
+
+                &:active {
+                    color: white;
+                }
             }
 
             .about-item {
                 margin-top: 5px;
                 color: rgba(255, 255, 255, 0.671);
+                font-size: 15px;
             }
 
             .about-cost {
                 margin-top: auto;
                 font-size: 25px;
-                color: rgb(7, 184, 7);
+                color: yellow;
                 margin-bottom: 5px;
             }
 
@@ -1282,10 +1313,23 @@ ul li a:hover:after {
                     transition: 1s;
                 }
 
+                //BUTTON COLOR ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                 .plus {
                     color: green;
                     transition: 1s;
+                    display: flex;
 
+                    .sm-block( {
+                            color: white;
+                        }
+
+                    );
+
+                    p {
+                        font-size: 20px;
+                        padding-right: 10px;
+                        padding-top: 12px;
+                    }
 
                 }
 
@@ -1301,11 +1345,6 @@ ul li a:hover:after {
                     outline-style: none !important;
                     box-shadow: none;
 
-
-
-
-
-
                     .sm-block( {
                             width: 20%;
                         }
@@ -1313,9 +1352,8 @@ ul li a:hover:after {
                     );
 
 
-
                     .far {
-                        font-size: 35px;
+                        font-size: 40px;
                         margin: 0;
                         padding: 0;
                         // text-shadow: 2px 2px 15px black;
@@ -1382,7 +1420,7 @@ ul li a:hover:after {
         border-radius: 1%;
 
         .modal-content {
-            opacity: 0.8;
+            opacity: 0.7;
             background-image: radial-gradient(circle, #a50000, #8f0004, #790005, #640004, #4f0000);
             display: flex;
             justify-content: center;
@@ -1465,7 +1503,7 @@ ul li a:hover:after {
 
                 .cart-body-header {
 
-                    h2 {
+                    h1 {
                         font-size: 50px;
                         color: white;
                         text-shadow: 2px 2px 15px black;
@@ -1518,7 +1556,7 @@ ul li a:hover:after {
                                 height: 380px;
 
                                 .sm-block( {
-                                        height: 300px;
+                                        height: 380px;
                                     }
 
                                 );
@@ -1530,7 +1568,7 @@ ul li a:hover:after {
                                     padding: 10px;
                                     margin-bottom: 10px;
                                     color: yellow;
-                                    font-size: 30px;
+                                    font-size: 22px;
                                 }
 
                                 .description-order {
@@ -1582,6 +1620,12 @@ ul li a:hover:after {
                                     .plus {
                                         color: green;
                                         transition: 1s;
+
+                                        // .sm-block( {
+                                        //         color: white;
+                                        //     }
+
+                                        // );
 
                                     }
 
@@ -1738,13 +1782,13 @@ ul li a:hover:after {
 
         .contacts-header {
             margin: 50px;
-            font-size: 50px;
+            font-size: 40px;
             color: red;
             text-shadow: 2px 2px 2px rgb(255, 255, 255);
 
             .sm-block( {
                     margin: 25px;
-                    font-size: 30px;
+                    font-size: 22px;
                 }
 
             );
@@ -1758,7 +1802,7 @@ ul li a:hover:after {
 
             .sm-block( {
                     margin: 20px;
-                    font-size: 30px;
+                    font-size: 22px;
                 }
 
             );
@@ -1767,7 +1811,7 @@ ul li a:hover:after {
             input {
                 text-align: center;
                 color: black;
-                font-size: 30px;
+                font-size: 22px;
                 text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.541);
                 border: none;
                 border-bottom: 2px solid red;
@@ -1791,7 +1835,7 @@ ul li a:hover:after {
 
             .sm-block( {
                     margin: 20px;
-                    font-size: 30px;
+                    font-size: 22px;
                 }
 
             );
@@ -1808,6 +1852,12 @@ ul li a:hover:after {
                 background: rgba(255, 0, 0, 0);
                 transition: 1s;
                 border-radius: 15px;
+
+                .sm-block( {
+                        font-size: 22px;
+                    }
+
+                );
 
                 &:focus {
                     box-shadow: none;
@@ -1828,7 +1878,7 @@ ul li a:hover:after {
 
             .sm-block( {
                     margin: 20px;
-                    font-size: 30px;
+                    font-size: 22px;
                 }
 
             );
@@ -1845,6 +1895,12 @@ ul li a:hover:after {
                 transition: 1s;
                 border-radius: 15px;
 
+                .sm-block( {
+                        font-size: 22px;
+                    }
+
+                );
+
                 &:focus {
                     box-shadow: none;
                     background: rgba(255, 255, 255, 0.342);
@@ -1860,7 +1916,7 @@ ul li a:hover:after {
 
             .sm-block( {
                     margin: 20px;
-                    font-size: 30px;
+                    font-size: 22px;
                 }
 
             );

@@ -2,9 +2,13 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Grid</title>
+    <title>Вкус Китая - доставка  китайской кухни в Чите.</title>
+    <meta name="yandex-verification" content="1f9cfed6824c7fa8" />
+    <meta name="description" content="Доставка Китайской кухни в городе Чита, Китайская кухня Чита, Заказ еды , заказ на дом, Заказ еды в Чите">
+    <meta name="keywords" content="Вкус Китая чита, Китайская кухня , доставка еды в г. Чита, доставка китайской еды, Чита, заказ на дом , бесплатная доставка. Заказ еды в Чите, заказать Китайскую кухню, Меню">
+
 
 
     <?php require "header.php" ?>
@@ -44,7 +48,7 @@
             <div class="menu-header">
                 <div class="menu-header-content">
                     <hr class="separator-line wow fadeInUp">
-                    <h2 class="menu-block-header  mt-4 text-white wow fadeInUp">Наше Меню</h2>
+                    <h1 class="menu-block-header  mt-4 text-white wow fadeInUp">Наше Меню</h1>
                 </div>
             </div>
         </section>
@@ -54,7 +58,7 @@
         </div>
 
         <section class="menu-body">
-            <div class="menu-body-content parallax-window" data-parallax="scroll" data-image-src="img/bg_4.jpg">
+            <div class="menu-body-content parallax-window" >
                 <div class="wrapper">
 
                     <!-- //GENERATE BLOCK=========================================== -->

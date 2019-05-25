@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Корзна</title>
+    <meta name="yandex-verification" content="1f9cfed6824c7fa8" />
+    <title>Вкус Китая Чита, Китайская кухня, доставка еды в городе Чита</title>
+    <meta name="description" content="Доставка Китайской кухни в городе Чита, Китайская кухня Чита">
+    <meta name="keywords" content="вкус китая чита, китайская кухня, доставка еды в чите, доставка китайской еды">
 
 
     <?php require "header.php" ?>
@@ -16,9 +19,9 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title text-center text-white" id="exampleModalLongTitle">Корзина пуста, добавьте товар в корзину</h5>
-                        <button type="button  " class="btn-danger close" data-dismiss="modal" aria-label="Close">
+                        <!-- <button type="button  " class="btn-danger close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                        </button>
+                        </button> -->
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success text-white" data-dismiss="modal">Закрыть</button>
@@ -34,9 +37,9 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title text-center text-white" id="exampleModalLongTitle">Заполните все контактные данные - имя, телефон и адресс доставки</h5>
-                        <button type="button  " class="btn-danger close" data-dismiss="modal" aria-label="Close">
+                        <!-- <button type="button  " class="btn-danger close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                        </button>
+                        </button> -->
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-success text-white" data-dismiss="modal">Закрыть</button>
@@ -52,9 +55,9 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title text-center text-white" id="exampleModalLongTitle">Ваш заказ был отправлен! В ближайшее время с вами свяжется наш менеджер</h5>
-                        <button type="button  " class="btn-danger close" data-dismiss="modal" aria-label="Close">
+                        <!-- <button type="button  " class="btn-danger close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                        </button>
+                        </button> -->
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="close-order btn btn-success text-white" data-dismiss="modal">Закрыть</button>
@@ -74,7 +77,7 @@
                         <br class="hide-small-screen">
                         <br class="hide-small-screen">
                         <div class="cart-body-header mt-5">
-                            <h2 class="text-center wow fadeInUp "> Ваши покупки</h2>
+                            <h1 class="text-center wow fadeInUp "> Ваши покупки</h1>
                         </div>
 
 

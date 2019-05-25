@@ -1,26 +1,90 @@
 {
     "101": {
         "category": "cold",
-        "name": "мясо",
-        "weight": "400",
-        "description": "Lorem ipsum dolor sit amet coit. Aliquid, eum.",
-        "cost": 450,
+        "name": "салат из куриных желудков",
+        "weight": "300",
+        "description": "желудки куриные, огурец, морковь, чеснок, лук, масло, специи",
+        "cost": 300,
         "img": "apple.png"
     },
     "102": {
         "category": "cold",
-        "name": "салат",
-        "weight": "200",
-        "description": "Lorem ipsum dolor sit aipisicing elit. Aliquid, eum.",
-        "cost": 250,
+        "name": "салат из свиных ушей",
+        "weight": "300",
+        "description": "уши свеные, морковь, помидор, огурец, чеснок, лук, масло, специи",
+        "cost": 350,
         "img": "cherry.png"
     },
     "103": {
-        "category": "hot",
-        "name": "огурцы",
-        "weight": "220",
-        "description": "fgdfgdfgfdgdfgdf.",
+        "category": "cold",
+        "name": "салат - битые огурцы",
+        "weight": "300",
+        "description": "огурец, чеснок, масло, специи.",
+        "cost": 200,
+        "img": "cherry.png"
+    },
+    "104": {
+        "category": "cold",
+        "name": "салат овощной с майонезом",
+        "weight": "300",
+        "description": "огурец, помидор, лук, майонез, специи..",
+        "cost": 350,
+        "img": "cherry.png"
+    },
+    "105": {
+        "category": "cold",
+        "name": "китайский салат",
+        "weight": "300",
+        "description": "фунчеза, грибы древесные, морковь, огурец, капуста пекинская, чеснок, специи.",
         "cost": 250,
+        "img": "cherry.png"
+    },
+    "106": {
+        "category": "cold",
+        "name": "китайский салат с мясом",
+        "weight": "300",
+        "description": "фунчеза, свинина, грибы древесные, морковь, огурец, капуста пекинская, чеснок.",
+        "cost": 280,
+        "img": "cherry.png"
+    },
+    "107": {
+        "category": "cold",
+        "name": "салат из языка с майонезом",
+        "weight": "300",
+        "description": "язык говяжий, морковь, огурец, помидор, лук, майонез, специи.",
+        "cost": 390,
+        "img": "cherry.png"
+    },
+    "108": {
+        "category": "cold",
+        "name": "салат из языка",
+        "weight": "300",
+        "description": "язык говяжий, морковь, огурец, помидор, лук, специи.",
+        "cost": 350,
+        "img": "cherry.png"
+    },
+    "109": {
+        "category": "cold",
+        "name": "салат из кальмаров с майонезом",
+        "weight": "300",
+        "description": "кальмар, майонез, огурец, морковь, лук, специи.",
+        "cost": 370,
+        "img": "cherry.png"
+    },
+    "110": {
+        "category": "cold",
+        "name": "салат масной с арахисом",
+        "weight": "300",
+        "description": "говядина, арахис , огурец, морковь, лук, масло, чеснок,  специи.",
+        "cost": 380,
+        "img": "cherry.png"
+    },
+    "111": {
+        "category": "cold",
+        "name": "салат из огурца и мяса",
+        "weight": "300",
+        "description": "говядина, огурец, морковь, лук, масло, чеснок,  специи.",
+        "cost": 390,
         "img": "cherry.png"
     }
 }
