@@ -17,41 +17,97 @@
     <div class="container">
         <div class="alert alert-success" role="alert">
             <h4 class="alert-heading">Панель администратора</h4>
-            <p>Для добавления нового товара, выберите категорию в которую хотите добавить новый товар, затем опцию "новый товар" во вкладке имя товара. Введите нужные значения, нажмите сохранить. </p>
+            <p>Для добавления нового товара, выберите категорию в которую хотите добавить новый товар, затем опцию
+                "новый товар" во вкладке имя товара. Заполните поля: ID(уникальный номер, не должен повторятся), имя,
+                описания, вес и цена товара </p>
             <hr>
             <p class="mb-0">Редактирование свойств и описание товара</p>
         </div>
         <div class="alert alert-primary" role="alert">
             Выберите категорию товара
         </div>
-        <select class="form-control">
-            <option>Default select</option>
-            <option>lol</option>
-        </select>
+        <div class="category-body">
+            <select class="form-control category">
+                <option data-id="hot">Горячие блюда</option>
+                <option data-id="cold">Салаты</option>
+            </select>
+        </div>
+
+
+        <!-- ====================================================================================== -->
 
         <div class="alert alert-primary mt-3" role="alert">
-            Выберите/Введите имя товара
+            Выберите товар
         </div>
-        <select class="form-control">
-            <option>Default select</option>
-        </select>
 
-        <div class="alert alert-primary mt-3" role="alert">
-            Выберите имя товара
+        <div class="item-name">
+            <select class="form-control name mb-3">
+            </select>
         </div>
-        <select class="form-control">
-            <option>Default select</option>
-        </select>
 
 
-        <script src="js/jquery.js"></script>
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-        <!-- Bootstrap core JavaScript -->
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
-        <script src="js/js.js"></script>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Имя</span>
+            </div>
+            <input type="text" id="gname" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Стоимость</span>
+            </div>
+            <input type="text" id="gcost" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Вес</span>
+            </div>
+            <input type="text" id="gwight" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+
+
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-default">Картинка</span>
+            </div>
+            <input type="text" id="gimg" class="form-control" aria-label="Default"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+
+        <div class="form-group mt-3">
+            <label for="gdescr">Описание товара</label>
+            <textarea class="form-control" id="gdescr" rows="7"></textarea>
+        </div>
+
+        <input type="hidden" id="dig">
+
+        <div class="button text-center">
+            <button type="button" class="add-to-db  btn btn-success btn-lg">Обновить/добавить</button>
+            <button type="button" class="add-to-db  btn btn-danger btn-lg">Удолить</button>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <script src="js/jquery.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/js/mdb.min.js"></script>
+    <script src="js/js.js"></script>
 
 </body>
 
