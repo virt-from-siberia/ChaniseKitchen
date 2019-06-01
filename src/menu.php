@@ -16,6 +16,7 @@
 
     <main>
 
+
         <!--MODAL -->
         <!-- <button type="button" class="btn btn-primary" >Large modal</button> -->
 
@@ -62,22 +63,38 @@
                 <div class="wrapper">
 
                     <!-- //GENERATE BLOCK=========================================== -->
+                    <div class="image-dishes">
+                        <img src="img/icons/salad.png" alt="Салаты">
+                    </div>
                     <div class="goods-out-cold item-container" id="cold-dishes">
+
 
 
 
                     </div>
 
+
+                    <div class="image-dishes">
+                        <img src="img/icons/hot.png" alt="Горячие блюда">
+                    </div>
                     <div class="goods-out-hot item-container" id="hot-dishes">
 
 
 
                     </div>
 
+
+                    <div class="image-dishes">
+                        <img src="img/icons/pizza.png" alt="пицца">
+                    </div>
                     <div class="goods-out-pizza item-container" id="pizza-dishes">
 
 
 
+                    </div>
+
+                    <div class="image-dishes">
+                        <img src="img/icons/drink.png" alt="Напистки">
                     </div>
 
                     <div class="goods-out-drink item-container" id="drink-dishes">
