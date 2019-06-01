@@ -24,6 +24,28 @@ function initCold() {
     );
 }
 
+function initPizza() {
+    console.log('initPizza');
+    $.post(
+        "core.php",
+        {
+            "action": "initPizza"
+        },
+        showGoods
+    );
+}
+
+function initDrink() {
+    console.log('initPizza');
+    $.post(
+        "core.php",
+        {
+            "action": "initDrink"
+        },
+        showGoods
+    );
+}
+
 function showGoods(data) {
     clearGoodInpunts();
     data = JSON.parse(data);
@@ -82,15 +104,23 @@ function changeCategory() {
             console.log('OPTION SELECTED = COLD');
             clearGoodInpunts();
             initCold();
+        } else if ($("option:selected", this).attr('data-id') == 'pizza') {
+            console.log('OPTION SELECTED = pizza');
+            clearGoodInpunts();
+            initPizza();
         }
-
+        else if ($("option:selected", this).attr('data-id') == 'drink') {
+            console.log('OPTION SELECTED = drink');
+            clearGoodInpunts();
+            initDrink();
+        }
     });
-
 }
 
 function saveToDb() {
+
     var id = $('#dig').val();
-    if (id != undefined) {
+    if (id != "") {
         $.post(
             "core.php",
             {
@@ -103,19 +133,69 @@ function saveToDb() {
                 "gimg": $('#gimg').val()
             },
             function (data) {
-                if (data == 1) {
+                if (data == 1 || 11) {
                     alert('Товар обновлен');
                     initHot();
                 } else {
                     console.log(data);
                 }
-
             }
-
         );
+    } else {
+        console.log('ELSE');
+        if ($('#gname').val() != '' && $('#gcost').val() != '' && $('#gwight').val() != '') {
+            $.post(
+                "core.php",
+                {
+                    "action": "newGoods",
+                    "gid": 0,
+                    "gname": $('#gname').val(),
+                    "gcost": $('#gcost').val(),
+                    "gdescr": $('#gdescr').val(),
+                    "gwight": $('#gwight').val(),
+                    "gimg": $('#gimg').val(),
+                    "gcategory": $('.category option:selected').attr('data-id')
+                },
+                function (data) {
+                    if (data == 1 || 11) {
+                        alert('Запись добавлена');
+                        initHot();
+                    } else {
+                        console.log(data);
+                    }
+                }
+            );
+        } else {
+            alert('заполние обязательные поля имя, стоиимость, вес товара!');
+        }
     }
 }
 
+function deleteGoods() {
+    var id = $('#dig').val();
+    if (id != "") {
+        $.post(
+            "core.php",
+            {
+                "action": "deleteGoods",
+                "id": id
+            },
+            function (data) {
+                if (data == 1) {
+                    alert('Запись удалена');
+                    clearGoodInpunts();
+                    initHot();
+                }
+                else {
+                    console.log(data);
+                }
+            }
+        );
+    }
+    else {
+        console.log(data);
+    }
+}
 
 
 
@@ -123,4 +203,6 @@ $(document).ready(function () {
     initHot();
     changeCategory();
     $('.add-to-db').on('click', saveToDb);
+    $('.category option:selected').val();
+    $('.delete-from-db').on('click', deleteGoods);
 });

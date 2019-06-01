@@ -10,12 +10,43 @@ var cart = {}; //КОРЗИНА
 
 function init() {
     //ВЫВОД ТОВАРА
-    $.getJSON("goodsCOLD.JSON", goodsOutCOLD);
-    $.getJSON("goodsHOT.JSON", goodsOutHOT);
+    // $.getJSON("goodsCOLD.JSON", goodsOutCOLD);
+    // $.getJSON("goodsHOT.JSON", goodsOutHOT);
+
+    $.post(
+        "admin/core.php",
+        {
+            "action": "loadCOLDGoods"
+        },
+        goodsOutCOLD
+    );
+
+    $.post(
+        "admin/core.php",
+        {
+            "action": "loadHOTGoods"
+        },
+        goodsOutHOT
+    );
+    $.post(
+        "admin/core.php",
+        {
+            "action": "loadPIZZAGoods"
+        },
+        goodsOutPIZZA
+    );
+    $.post(
+        "admin/core.php",
+        {
+            "action": "loadDRINKGoods"
+        },
+        goodsOutDRINK
+    );
 
 }
 
 function goodsOutCOLD(data) {
+    data = JSON.parse(data);
     var out = '';
 
 
@@ -54,6 +85,7 @@ function goodsOutCOLD(data) {
 }
 
 function goodsOutHOT(data) {
+    data = JSON.parse(data);
     var out = '';
 
     out += `<div class= "item-container-header pt-3">`;
@@ -89,6 +121,83 @@ function goodsOutHOT(data) {
     $('.hotMinus').on('click', animateCart);
 
 }
+
+function goodsOutPIZZA(data) {
+    data = JSON.parse(data);
+    var out = '';
+
+    out += `<div class= "item-container-header pt-3">`;
+    out += `<hr class="separator-line wow fadeInUp  mt-5"><h2 class="text-center text-white mt-5 mb-5 wow fadeInUp">Пицца</h2>`;
+    // out += `<div class="items row">`;
+    out += `<div class="items row">`;
+    for (var key in data) {
+        out += ``;
+        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 wow fadeInUp text-center">`;
+        out += `<h3 class="header-item text-center  mt-3 mb-3  wow fadeInRight">${data[key].name}</h3>`;
+        //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ
+        out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
+        // out += `<p><img src="img/items/${data[key].img}" alt="${data[key].name}"></p>`;
+        out += `<p class="weight-item text-center wow fadeInUp">${data[key].weight}гр</p>`;
+        out += `<p class="about-item text-center wow fadeInLeft">${data[key].description}.</p>`;
+        out += `<p class="about-cost text-center wow fadeInUp"> ${data[key].cost} руб </p>`;
+        out += `<div class="buttons">`;
+        // out += `<button type="button" class="minus hotMinus btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-minus-square"></i></button>`;
+        // out += ` <button type="button" class="delite hotDelite btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-times-circle"></i></button>`;
+        // out += ` <button type="button" class="delite  btn btn-outline btn-sm" data-id="${key}"></button>`;
+        out += `<button type="button" class="plus btn pizzaplus btn-outline btn-sm" data-id="${key}"><p>добавить</p><i class=" far fa-plus-square"></i></button>`;
+        out += `</div>`;
+        out += `</div>`;
+
+    }
+    out += `</div>`;
+    $('.goods-out-pizza').html(out);
+    $('.pizzaplus').on('click', addToCart);
+    $('.pizzaplus').on('click', animateCart);
+    $('.hotDelite').on('click', deliteCart);
+    $('.hotDelite').on('click', animateCart);
+    $('.hotMinus').on('click', minusCart);
+    $('.hotMinus').on('click', animateCart);
+
+}
+
+function goodsOutDRINK(data) {
+    data = JSON.parse(data);
+    var out = '';
+
+    out += `<div class= "item-container-header pt-3">`;
+    out += `<hr class="separator-line wow fadeInUp  mt-5"><h2 class="text-center text-white mt-5 mb-5 wow fadeInUp">Напитки</h2>`;
+    // out += `<div class="items row">`;
+    out += `<div class="items row">`;
+    for (var key in data) {
+        out += ``;
+        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 wow fadeInUp text-center">`;
+        out += `<h3 class="header-item text-center  mt-3 mb-3  wow fadeInRight">${data[key].name}</h3>`;
+        //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ
+        out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
+        // out += `<p><img src="img/items/${data[key].img}" alt="${data[key].name}"></p>`;
+        out += `<p class="weight-item text-center wow fadeInUp">${data[key].weight}гр</p>`;
+        out += `<p class="about-item text-center wow fadeInLeft">${data[key].description}.</p>`;
+        out += `<p class="about-cost text-center wow fadeInUp"> ${data[key].cost} руб </p>`;
+        out += `<div class="buttons">`;
+        // out += `<button type="button" class="minus hotMinus btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-minus-square"></i></button>`;
+        // out += ` <button type="button" class="delite hotDelite btn btn-outline btn-sm" data-id="${key}"><i class=" far fa-times-circle"></i></button>`;
+        // out += ` <button type="button" class="delite  btn btn-outline btn-sm" data-id="${key}"></button>`;
+        out += `<button type="button" class="plus btn drinkPlus btn-outline btn-sm" data-id="${key}"><p>добавить</p><i class=" far fa-plus-square"></i></button>`;
+        out += `</div>`;
+        out += `</div>`;
+
+    }
+    out += `</div>`;
+    $('.goods-out-drink').html(out);
+    $('.drinkPlus').on('click', addToCart);
+    $('.drinkPlus').on('click', animateCart);
+    $('.hotDelite').on('click', deliteCart);
+    $('.hotDelite').on('click', animateCart);
+    $('.hotMinus').on('click', minusCart);
+    $('.hotMinus').on('click', animateCart);
+
+}
+
 
 
 function addToCart() {
@@ -129,19 +238,40 @@ function saveCart() {
 
 function showMiniCart() {
     //показываю мини корзину
+    $.post(
+        "admin/core.php",
+        {
+            "action": "showMiniCart"
+        },
+        function (dataMinCart) {
+            dataMinCart = JSON.parse(dataMinCart);
+            var goodsMinCart = dataMinCart;
+            var commonSummmMinCart = 0;
+            var out = '';
+            for (var key in cart) {
+                out += goodsMinCart[key].name + ' --- ' + cart[key] + '<br>';
+                commonSummmMinCart = commonSummmMinCart + (goodsMinCart[key].cost * cart[key]);
+            }
+            out += 'Сумма заказа --- ' + commonSummmMinCart;
+            $('.mini-cart-items').html(out);
+            $('.sum').html(commonSummmMinCart);
 
-    $.getJSON('commonGoods.JSON', function (dataMinCart) {
-        var goodsMinCart = dataMinCart;
-        var commonSummmMinCart = 0;
-        var out = '';
-        for (var key in cart) {
-            out += goodsMinCart[key].name + ' --- ' + cart[key] + '<br>';
-            commonSummmMinCart = commonSummmMinCart + (goodsMinCart[key].cost * cart[key]);
         }
-        out += 'Сумма заказа --- ' + commonSummmMinCart;
-        $('.mini-cart-items').html(out);
-        $('.sum').html(commonSummmMinCart);
-    });
+    );
+
+
+    // $.getJSON('commonGoods.JSON', function (dataMinCart) {
+    //     var goodsMinCart = dataMinCart;
+    //     var commonSummmMinCart = 0;
+    //     var out = '';
+    //     for (var key in cart) {
+    //         out += goodsMinCart[key].name + ' --- ' + cart[key] + '<br>';
+    //         commonSummmMinCart = commonSummmMinCart + (goodsMinCart[key].cost * cart[key]);
+    //     }
+    //     out += 'Сумма заказа --- ' + commonSummmMinCart;
+    //     $('.mini-cart-items').html(out);
+    //     $('.sum').html(commonSummmMinCart);
+    // });
 
 }
 
