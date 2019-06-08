@@ -1,7 +1,34 @@
 <?php
 
-$json = file_get_contents('commonGoods.JSON');
-$json = json_decode($json, true);
+
+function connect()
+{
+    $conn = mysqli_connect("localhost", "virtyoz777_aleks", "%O5HhBc5", "virtyoz777_aleks");
+    if (!$conn) {
+        die("Connection failed: " . mysqli_connect_error());
+    }
+    // mysqli_set_charset($conn, "utf8");
+    return $conn;
+}
+
+
+
+$conn = connect();
+$sql = "SELECT *  FROM goods ";
+$result = mysqli_query($conn, $sql);
+
+$goods = '';
+
+if (mysqli_num_rows($result) > 0) {
+    $out = array();
+    while ($row = mysqli_fetch_assoc($result)) {
+        $out[$row["id"]] = $row;
+    }
+    $goods = $out;
+}
+mysqli_close($conn);
+
+
 
 //Письмо
 
@@ -16,11 +43,11 @@ $message .= '<p> ' . $_POST['datetime'] . '</p>';
 $cart = $_POST['cart'];
 $sum = 0;
 foreach ($cart as $id => $count) {
-    $message .= 'Наименование товара : ' . $json[$id]['name'] . ' --- ';
+    $message .= 'Наименование товара : ' . $goods[$id]['name'] . ' --- ';
     $message .= 'Количество товара : ' . $count . ' --- ';
-    $message .= 'Сумма товара : ' . $count * $json[$id]['cost'];
+    $message .= 'Сумма товара : ' . $count * $goods[$id]['cost'];
     $message .= '<br>';
-    $sum = $sum + $count * $json[$id]['cost'];
+    $sum = $sum + $count * $goods[$id]['cost'];
 }
 $message .= 'Всего сумма заказа: ' . $sum;
 // print_r($message);
@@ -33,7 +60,7 @@ $headers  = 'MIME-Version: 1.0' . "\r\n";
 $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
 
 $m = mail($to, 'Заказ в магазине', $spectext . $message . '</body></html>', $headers);
-$m2 = mail($to, 'Заказ в магазине', $spectext . $message . '</body></html>', $headers);
+$m2 = mail($to2, 'Заказ в магазине', $spectext . $message . '</body></html>', $headers);
 
 if ($m) {
     echo 1;
