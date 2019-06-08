@@ -17,7 +17,6 @@ $conn = connect();
 $sql = "SELECT *  FROM goods ";
 $result = mysqli_query($conn, $sql);
 
-$goods = '';
 
 if (mysqli_num_rows($result) > 0) {
     $out = array();

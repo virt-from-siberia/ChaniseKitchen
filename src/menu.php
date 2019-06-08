@@ -38,7 +38,7 @@
 
         <!-- CART -->
         <div class="wrapper">
-            <div class="cart text-center wow bounceIn" data-toggle="modal" data-target=".bd-example-modal-lg">
+            <div class="cart text-center " data-toggle="modal" data-target=".bd-example-modal-lg">
                 <i class="fas fa-shopping-cart"></i>
                 <div class="sum wow  bounceIn">0</div>
             </div>
@@ -63,45 +63,41 @@
                 <div class="wrapper">
 
                     <!-- //GENERATE BLOCK=========================================== -->
-                    <div class="image-dishes">
+                    <div class="image-dishes" id="cold-dishes">
                         <img src="img/icons/salad.png" alt="Салаты">
                     </div>
-                    <div class="goods-out-cold item-container" id="cold-dishes">
-
-
-
-
+                    <div class="goods-out-cold item-container" >
+                        <!-- //OUT++++ -->
                     </div>
 
 
-                    <div class="image-dishes">
+
+                    <div class="image-dishes" id="hot-dishes">
                         <img src="img/icons/hot.png" alt="Горячие блюда">
                     </div>
-                    <div class="goods-out-hot item-container" id="hot-dishes">
-
-
-
+                    <div class="goods-out-hot item-container" >
+                        <!-- //OUT++++ -->
                     </div>
 
 
-                    <div class="image-dishes">
+
+                    <div class="image-dishes" id="pizza">
                         <img src="img/icons/pizza.png" alt="пицца">
                     </div>
-                    <div class="goods-out-pizza item-container" id="pizza-dishes">
-
-
-
+                    <div class="goods-out-pizza item-container" >
+                        <!-- //OUT++++ -->
                     </div>
 
-                    <div class="image-dishes">
+
+
+                    <div class="image-dishes" id="drink-dishes">
                         <img src="img/icons/drink.png" alt="Напистки">
                     </div>
-
-                    <div class="goods-out-drink item-container" id="drink-dishes">
-
-
-
+                    <div class="goods-out-drink item-container" >
+                        <!-- //OUT++++ -->
                     </div>
+
+
                     <!-- //END GENERATE BLOCK=========================================== -->
 
 

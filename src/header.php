@@ -36,12 +36,6 @@
                         <a class="nav-link" href="index.php#delivery">Доставка <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="menu.php#hot-dishes">Горячие блюда</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="menu.php#cold-dishes">Салаты</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="cart.php">Корзина</a>
                     </li>
                     <li class="nav-item">
@@ -61,25 +55,25 @@
             <div class="row">
 
                 <div class="col-2  nav-manu-link-item">
-                    <a href="">
+                    <a href="menu.php#cold-dishes">
                         <img src="img/icons/salad.png" alt="салат">
                         <p class="text-center">Салаты</p>
                     </a>
                 </div>
                 <div class="col-2  nav-manu-link-item">
-                    <a href="">
+                    <a href="menu.php#hot-dishes">
                         <img src="img/icons/hot.png" alt="горячие блюда">
                         <p class="text-center">Горячие блюда</p>
                     </a>
                 </div>
                 <div class="col-2  nav-manu-link-item">
-                    <a href="">
+                    <a href="menu.php#pizza">
                         <img src="img/icons/pizza.png" alt="пицца">
                         <p class="text-center">Пицца</p>
                     </a>
                 </div>
                 <div class="col-2  nav-manu-link-item">
-                    <a href="">
+                    <a href="menu.php#drink-dishes">
                         <img src="img/icons/drink.png" alt="напитки">
                         <p class="text-center"> Напитки</p>
                     </a>

@@ -292,4 +292,5 @@ function animateCart() {
 $(document).ready(function () {
     init();
     loadCart();
+    animateCart();
 });

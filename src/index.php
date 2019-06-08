@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <title>Вкус Китая - доставка  китайской кухни в Чите.</title>
+    <title>Вкус Китая - доставка китайской кухни в Чите.</title>
     <meta name="yandex-verification" content="1f9cfed6824c7fa8" />
     <meta name="description" content="Доставка Китайской кухни в городе Чита, Китайская кухня Чита, Заказ еды , заказ на дом, Заказ еды в Чите">
     <meta name="keywords" content="Вкус Китая чита, Китайская кухня , доставка еды в г. Чита, доставка китайской еды, Чита, заказ на дом , бесплатная доставка. Заказ еды в Чите, заказать Китайскую кухню">
@@ -173,12 +173,40 @@
                             <a href="menu.php#cold-dishes">
                                 <div class="box">
                                     <div class="imgBox">
-                                        <img src="./img/salad.jpg" alt="a">
+                                        <img src="./img/salad.jpg" alt="Салаты">
                                     </div>
                                     <div class="content">
                                         <p class="pepe text-center">Салаты</p>
                                         <h2>Салаты</h2>
                                         <p class="pe">Попробуйте наши горячие блюда.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-10 mt-3 mb-3 wow fadeInUp">
+                            <a href="menu.php#pizza">
+                                <div class="box">
+                                    <div class="imgBox">
+                                        <img src="./img/pizza.jpg" alt="Пицца">
+                                    </div>
+                                    <div class="content">
+                                        <p class="pepe text-center">Пицца</p>
+                                        <h2>Пицца</h2>
+                                        <p class="pe">Попробуйте нашу пиццу.</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-10 mt-3 mb-3 wow fadeInUp">
+                            <a href="menu.php#drink-dishes">
+                                <div class="box">
+                                    <div class="imgBox">
+                                        <img src="./img/drinks.jpg" alt="напитки">
+                                    </div>
+                                    <div class="content">
+                                        <p class="pepe text-center">напитки</p>
+                                        <h2>напитки</h2>
+                                        <p class="pe">Попробуйте наши напитки</p>
                                     </div>
                                 </div>
                             </a>
