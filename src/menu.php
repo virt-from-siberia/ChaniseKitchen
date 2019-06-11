@@ -66,7 +66,7 @@
                     <div class="image-dishes" id="cold-dishes">
                         <img src="img/icons/salad.png" alt="Салаты">
                     </div>
-                    <div class="goods-out-cold item-container" >
+                    <div class="goods-out-cold item-container">
                         <!-- //OUT++++ -->
                     </div>
 
@@ -75,7 +75,7 @@
                     <div class="image-dishes" id="hot-dishes">
                         <img src="img/icons/hot.png" alt="Горячие блюда">
                     </div>
-                    <div class="goods-out-hot item-container" >
+                    <div class="goods-out-hot item-container">
                         <!-- //OUT++++ -->
                     </div>
 
@@ -84,7 +84,7 @@
                     <div class="image-dishes" id="pizza">
                         <img src="img/icons/pizza.png" alt="пицца">
                     </div>
-                    <div class="goods-out-pizza item-container" >
+                    <div class="goods-out-pizza item-container">
                         <!-- //OUT++++ -->
                     </div>
 
@@ -93,7 +93,28 @@
                     <div class="image-dishes" id="drink-dishes">
                         <img src="img/icons/drink.png" alt="Напистки">
                     </div>
-                    <div class="goods-out-drink item-container" >
+                    <div class="goods-out-drink item-container">
+                        <!-- //OUT++++ -->
+                    </div>
+
+                    <div class="image-dishes" id="wok-dishes">
+                        <img src="img/icons/drink.png" alt="лапша wok">
+                    </div>
+                    <div class="goods-out-drink item-container">
+                        <!-- //OUT++++ -->
+                    </div>
+
+                    <div class="image-dishes" id="burger-dishes">
+                        <img src="img/icons/drink.png" alt="бургеры">
+                    </div>
+                    <div class="goods-out-drink item-container">
+                        <!-- //OUT++++ -->
+                    </div>
+
+                    <div class="image-dishes" id="kebab-dishes">
+                        <img src="img/icons/drink.png" alt="шаурма">
+                    </div>
+                    <div class="goods-out-drink item-container">
                         <!-- //OUT++++ -->
                     </div>
 

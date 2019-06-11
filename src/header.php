@@ -50,32 +50,45 @@
         </div>
 
     </nav>
+
     <div class="nav-manu-link ">
         <div class="container">
             <div class="row">
 
-                <div class="col-2  nav-manu-link-item">
+                <div class="col-2 nav-manu-link-item">
                     <a href="menu.php#cold-dishes">
                         <img src="img/icons/salad.png" alt="салат">
                         <p class="text-center">Салаты</p>
                     </a>
                 </div>
-                <div class="col-2  nav-manu-link-item">
+                <div class="col-2 nav-manu-link-item">
                     <a href="menu.php#hot-dishes">
                         <img src="img/icons/hot.png" alt="горячие блюда">
                         <p class="text-center">Горячие блюда</p>
                     </a>
                 </div>
-                <div class="col-2  nav-manu-link-item">
+                <div class="col-2 nav-manu-link-item">
                     <a href="menu.php#pizza">
                         <img src="img/icons/pizza.png" alt="пицца">
                         <p class="text-center">Пицца</p>
                     </a>
                 </div>
-                <div class="col-2  nav-manu-link-item">
+                <div class="col-2 nav-manu-link-item">
                     <a href="menu.php#drink-dishes">
                         <img src="img/icons/drink.png" alt="напитки">
                         <p class="text-center"> Напитки</p>
+                    </a>
+                </div>
+                <div class="col-2 nav-manu-link-item">
+                    <a href="menu.php#drink-dishes">
+                        <img src="img/icons/burger.png" alt="бургеры">
+                        <p class="text-center"> бургеры</p>
+                    </a>
+                </div>
+                <div class="col-2 nav-manu-link-item">
+                    <a href="menu.php#drink-dishes">
+                        <img src="img/icons/wok.png" alt="лапша wok">
+                        <p class="text-center"> лапша wok</p>
                     </a>
                 </div>
 
