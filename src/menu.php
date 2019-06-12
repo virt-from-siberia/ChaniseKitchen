@@ -98,21 +98,21 @@
                     </div>
 
                     <div class="image-dishes" id="wok-dishes">
-                        <img src="img/icons/drink.png" alt="лапша wok">
+                        <img src="img/icons/wok.png" alt="лапша wok">
                     </div>
                     <div class="goods-out-drink item-container">
                         <!-- //OUT++++ -->
                     </div>
 
                     <div class="image-dishes" id="burger-dishes">
-                        <img src="img/icons/drink.png" alt="бургеры">
+                        <img src="img/icons/burger.png" alt="бургеры">
                     </div>
                     <div class="goods-out-drink item-container">
                         <!-- //OUT++++ -->
                     </div>
 
                     <div class="image-dishes" id="kebab-dishes">
-                        <img src="img/icons/drink.png" alt="шаурма">
+                        <img src="img/icons/kebab.png" alt="шаурма">
                     </div>
                     <div class="goods-out-drink item-container">
                         <!-- //OUT++++ -->

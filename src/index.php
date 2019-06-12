@@ -97,15 +97,15 @@
                 <div class="wrapper">
                     <h3 class="delivery-text text-center yellow-text mt-5 pt-5 wow fadeInUp">Закажите доставку на дом!
                     </h3>
-
+<!-- 
                     <ul id="scene">
                         <li class="layer" data-depth="0.2"><img class="p2" src="img/p2.png"></li>
                         <li class="layer" data-depth="0.1"><img class="p1" src="img/p1.png"></li>
                         <li class="layer" data-depth="0.5"><img class="p3" src="img/p3.png"></li>
                         <li class="layer" data-depth="0.3"><img class="p4" src="img/p4.png"></li>
-                    </ul>
+                    </ul> -->
                 </div>
-                <div class="delivery-button text-center wow fadeInUp">
+                <!-- <div class="delivery-button text-center wow fadeInUp">
                     <button type="button" class=" btn text-light ">Заказать с доставкой</button>
                 </div>
                 <div class="delivery-boy text-white text-center wow fadeInUp">
@@ -113,7 +113,7 @@
                 </div>
                 <div class="delivery-contacts text-center wow fadeInUp ">
                     <i class="fas fa-phone text-light "> 8924-022-4242</i>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -207,6 +207,34 @@
                                         <p class="pepe text-center">напитки</p>
                                         <h2>напитки</h2>
                                         <p class="pe">Попробуйте наши напитки</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-10 mt-3 mb-3 wow fadeInUp">
+                            <a href="menu.php#drink-dishes">
+                                <div class="box">
+                                    <div class="imgBox">
+                                        <img src="./img/burger.jpg" alt="бургеры">
+                                    </div>
+                                    <div class="content">
+                                        <p class="pepe text-center">бургеры</p>
+                                        <h2>бургеры</h2>
+                                        <p class="pe">Попробуйте наши бургеры</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-10 mt-3 mb-3 wow fadeInUp">
+                            <a href="menu.php#drink-dishes">
+                                <div class="box">
+                                    <div class="imgBox">
+                                        <img src="./img/wok.jpg" alt="лапша wok">
+                                    </div>
+                                    <div class="content">
+                                        <p class="pepe text-center">лапша wok</p>
+                                        <h2>лапша wok</h2>
+                                        <p class="pe">Попробуйте нашу лапша wok</p>
                                     </div>
                                 </div>
                             </a>
