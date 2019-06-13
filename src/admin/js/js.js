@@ -46,6 +46,40 @@ function initDrink() {
     );
 }
 
+function initWok() {
+    console.log('initWok');
+    $.post(
+        "core.php",
+        {
+            "action": "initWok"
+        },
+        showGoods
+    );
+}
+
+function initBurger() {
+    console.log('initBurger');
+    $.post(
+        "core.php",
+        {
+            "action": "initBurger"
+        },
+        showGoods
+    );
+}
+
+
+function initKebab() {
+    console.log('initKebab');
+    $.post(
+        "core.php",
+        {
+            "action": "initKebab"
+        },
+        showGoods
+    );
+}
+
 function showGoods(data) {
     clearGoodInpunts();
     data = JSON.parse(data);
@@ -113,6 +147,21 @@ function changeCategory() {
             console.log('OPTION SELECTED = drink');
             clearGoodInpunts();
             initDrink();
+        }
+        else if ($("option:selected", this).attr('data-id') == 'wok') {
+            console.log('OPTION SELECTED = wok');
+            clearGoodInpunts();
+            initWok();
+        }
+        else if ($("option:selected", this).attr('data-id') == 'burger') {
+            console.log('OPTION SELECTED = burger');
+            clearGoodInpunts();
+            initBurger();
+        }
+        else if ($("option:selected", this).attr('data-id') == 'kebab') {
+            console.log('OPTION SELECTED = kebab');
+            clearGoodInpunts();
+            initKebab();
         }
     });
 }

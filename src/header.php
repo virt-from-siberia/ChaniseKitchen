@@ -80,13 +80,13 @@
                     </a>
                 </div>
                 <div class="col-2 nav-manu-link-item">
-                    <a href="menu.php#drink-dishes">
+                    <a href="menu.php#burger-dishes">
                         <img src="img/icons/burger.png" alt="бургеры">
                         <p class="text-center"> бургеры</p>
                     </a>
                 </div>
                 <div class="col-2 nav-manu-link-item">
-                    <a href="menu.php#drink-dishes">
+                    <a href="menu.php#wok-dishes">
                         <img src="img/icons/wok.png" alt="лапша wok">
                         <p class="text-center"> лапша wok</p>
                     </a>

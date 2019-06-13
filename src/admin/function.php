@@ -93,6 +93,63 @@ function initDrink()
     mysqli_close($conn);
 }
 
+function initWok()
+{
+    //вывожу список товаров
+    $conn = connect();
+    $sql = "SELECT *  FROM goods WHERE category = 'wok' ";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        $out = array();
+        while ($row = mysqli_fetch_assoc($result)) {
+            $out[$row["id"]] = $row;
+        }
+        echo json_encode($out);
+    } else {
+        echo "0";
+    }
+    mysqli_close($conn);
+}
+
+function initBurger()
+{
+    //вывожу список товаров
+    $conn = connect();
+    $sql = "SELECT *  FROM goods WHERE category = 'burger' ";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        $out = array();
+        while ($row = mysqli_fetch_assoc($result)) {
+            $out[$row["id"]] = $row;
+        }
+        echo json_encode($out);
+    } else {
+        echo "0";
+    }
+    mysqli_close($conn);
+}
+
+function initKebab()
+{
+    //вывожу список товаров
+    $conn = connect();
+    $sql = "SELECT *  FROM goods WHERE category = 'kebab' ";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        $out = array();
+        while ($row = mysqli_fetch_assoc($result)) {
+            $out[$row["id"]] = $row;
+        }
+        echo json_encode($out);
+    } else {
+        echo "0";
+    }
+    mysqli_close($conn);
+}
+
 function selectOneGoods()
 {
     //вывожу список товаров
@@ -156,24 +213,6 @@ function newGoods()
     // writeJSON();
 }
 
-// function writeJSON()
-// {
-//     $conn = connect();
-//     $sql = "SELECT *  FROM goods";
-//     $result = mysqli_query($conn, $sql);
-
-//     if (mysqli_num_rows($result) > 0) {
-//         $out = array();
-//         while ($row = mysqli_fetch_assoc($result)) {
-//             $out[$row["id"]] = $row;
-//         }
-//         $a = file_put_contents('../goods.JSON', json_encode($out));
-//     } else {
-//         echo "0";
-//     }
-//     mysqli_close($conn);
-// }
-
 function loadCOLDGoods()
 {
     $conn = connect();
@@ -234,6 +273,62 @@ function loadDRINKGoods()
 {
     $conn = connect();
     $sql = "SELECT *  FROM goods WHERE category = 'drink' ";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        $out = array();
+        while ($row = mysqli_fetch_assoc($result)) {
+            $out[$row["id"]] = $row;
+        }
+        echo json_encode($out);
+    } else {
+        echo "0";
+    }
+    mysqli_close($conn);
+}
+
+function loadWOKGoods()
+{
+    $conn = connect();
+    $sql = "SELECT *  FROM goods WHERE category = 'wok' ";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        $out = array();
+        while ($row = mysqli_fetch_assoc($result)) {
+            $out[$row["id"]] = $row;
+        }
+        echo json_encode($out);
+    } else {
+        echo "0";
+    }
+    mysqli_close($conn);
+}
+
+
+function loadBURGERGoods()
+{
+    $conn = connect();
+    $sql = "SELECT *  FROM goods WHERE category = 'burger' ";
+    $result = mysqli_query($conn, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
+        $out = array();
+        while ($row = mysqli_fetch_assoc($result)) {
+            $out[$row["id"]] = $row;
+        }
+        echo json_encode($out);
+    } else {
+        echo "0";
+    }
+    mysqli_close($conn);
+}
+
+
+function loadKEBABGoods()
+{
+    $conn = connect();
+    $sql = "SELECT *  FROM goods WHERE category = 'kebab' ";
     $result = mysqli_query($conn, $sql);
 
     if (mysqli_num_rows($result) > 0) {

@@ -4,6 +4,8 @@ $action = $_POST['action'];
 require_once 'function.php';
 
 switch ($action) {
+
+
     case 'initHot':
         initHot();
         break;
@@ -15,6 +17,15 @@ switch ($action) {
         break;
     case 'initDrink':
         initDrink();
+        break;
+    case 'initWok':
+        initWok();
+        break;
+    case 'initBurger':
+        initBurger();
+        break;
+    case 'initKebab':
+        initKebab();
         break;
     case 'selectOneGoods':
         selectOneGoods();
@@ -36,6 +47,15 @@ switch ($action) {
         break;
     case 'loadDRINKGoods':
         loadDRINKGoods();
+        break;
+    case 'loadWOKGoods':
+        loadWOKGoods();
+        break;
+    case 'loadBURGERGoods':
+        loadBURGERGoods();
+        break;
+    case 'loadKEBABGoods':
+        loadKEBABGoods();
         break;
     case 'showMiniCart':
         showMiniCart();
