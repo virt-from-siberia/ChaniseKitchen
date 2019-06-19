@@ -39,6 +39,23 @@ $(document).ready(function () {
     });
 
 
+    $('.slide-two').owlCarousel({
+        items: 1,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        smartSpeed: 1000,
+        autoplayHoverPause: false,
+        nav: false,
+        dots: false,
+        animateOut: 'fadeOut'
+    });
+
+
+
+
+
 
 
 

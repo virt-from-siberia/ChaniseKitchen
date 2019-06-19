@@ -40,7 +40,7 @@
         <div class="wrapper">
             <div class="cart text-center " data-toggle="modal" data-target=".bd-example-modal-lg">
                 <i class="fas fa-shopping-cart"></i>
-                <div class="sum wow  bounceIn">0</div>
+                <div class="sum ">0</div>
             </div>
         </div>
 

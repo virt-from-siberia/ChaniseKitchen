@@ -33,6 +33,82 @@
             </div>
         </section>
 
+
+        <section>
+            <!-- <div class="adv-blog "> -->
+            <div class="adv-blog parallax-window" data-parallax="scroll" data-image-src="img/bg_4ICONS.jpg">
+                <div class="owl-carousel slide-two owl-theme ">
+
+                    <div class="item  wow fadeInUp ">
+                        <div class="row">
+                            <img class="col-md-6 " src="img/BUR.jpg" alt="">
+                            <div class="col-md-6 article">
+                                <h2 class=" text-center wow fadeInUp ">закажи <span>фаст фуд</span> с доставкой!</h2>
+                                <img class="icon text-center  wow fadeInUp" src="img/icons/burger.png" alt="Бургеры">
+                                <h3 class="text-center  wow fadeInUp">Бургеры</h3>
+                                <p class="text-center wow fadeInUp">От <span>180</span> рублей!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item  wow fadeInUp ">
+                        <div class="row">
+                            <img class="col-md-6 " src="img/PIZZ.jpg" alt="">
+                            <div class="col-md-6 article">
+                                <h2 class=" text-center  wow fadeInUp">закажи <span>фаст фуд</span> с доставкой!</h2>
+                                <img class="icon text-center  wow fadeInUp" src="img/icons/pizza.png" alt="пицца">
+                                <h3 class="text-center  wow fadeInUp">Пицца</h3>
+                                <p class="text-center wow fadeInUp"><span class="text-red">33см, 45см</span>От <span>350</span> рублей!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item  wow fadeInUp ">
+                        <div class="row">
+                            <img class="col-md-6 " src="img/SHAU.jpg" alt="">
+                            <div class="col-md-6 article">
+                                <h2 class=" text-center  wow fadeInUp">закажи <span>фаст фуд</span> с доставкой!</h2>
+                                <img class="icon text-center  wow fadeInUp" src="img/icons/kebab.png" alt="шаурма">
+                                <h3 class="text-center  wow fadeInUp">шаурма</h3>
+                                <p class="text-center wow fadeInUp">От <span>180</span> рублей!</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item  wow fadeInUp ">
+                        <div class="row">
+                            <img class="col-md-6 " src="img/FREE.jpg" alt="">
+                            <div class="col-md-6 article">
+                                <h2 class=" text-center  wow fadeInUp">закажи <span>фаст фуд</span> с доставкой!</h2>
+                                <img class="icon text-center  wow fadeInUp" src="img/icons/free.png" alt="картофель фри">
+                                <h3 class="text-center  wow fadeInUp">картофель фри</h3>
+                                <p class="text-center wow fadeInUp">От <span>190</span> рублей!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item  wow fadeInUp ">
+                        <div class="row">
+                            <img class="col-md-6 " src="img/black.jpg" alt="">
+                            <div class="col-md-6 article">
+                                <h2 class=" text-center  wow fadeInUp">закажи <span>фаст фуд</span> с доставкой!</h2>
+                                <img class="icon text-center  wow fadeInUp" src="img/icons/burger.png" alt="Бургеры">
+                                <h3 class="text-center  wow fadeInUp">Попробуй <span>старбургер</span></h3>
+                                <p class="text-center wow fadeInUp">булка черная, две котлеты <span>650</span> грамм!</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+
+
+        </section>
+
         <section>
             <div class="delivery ">
                 <h2 class="delivery-header text-center pt-5 wow fadeInUp">

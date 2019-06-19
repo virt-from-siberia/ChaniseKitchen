@@ -71,12 +71,15 @@ function goodsOutCOLD(data) {
     out += `<div class="items row">`;
     for (var key in data) {
 
-        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 wow fadeInUp text-center">`;
+        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3  text-center">`;
         out += `<h3 class="header-item text-center  mt-3 mb-3 ">${data[key].name}</h3>`;
         //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ
-        out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
-        // out += `<p><img src="img/items/${data[key].img}" alt="${data[key].name}"></p>`;
-        out += `<p class="weight-item text-center text-white ">${data[key].weight}гр</p>`;
+        // out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
+        //======================
+        out += `<p><img src="img/menu/${data[key].img}" alt="${data[key].name}"></p>`;
+        //======================
+        // out += `<p><img src="img/menu/wok-kur.jpg" alt="${data[key].name}"></p>`;
+        out += `<p class="weight-item text-center">${data[key].weight}гр</p>`;
         out += `<p class="about-item text-center ">${data[key].description}.</p>`;
         out += `<p class="about-cost text-center "> ${data[key].cost} руб </p>`;
         out += `<div class="buttons">`;
@@ -105,7 +108,7 @@ function goodsOutHOT(data) {
     out += `<div class="items row">`;
     for (var key in data) {
         out += ``;
-        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 wow fadeInUp text-center">`;
+        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3  text-center">`;
         out += `<h3 class="header-item text-center  mt-3 mb-3  ">${data[key].name}</h3>`;
         //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ
         out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
@@ -136,7 +139,7 @@ function goodsOutPIZZA(data) {
     out += `<div class="items row">`;
     for (var key in data) {
         out += ``;
-        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 wow fadeInUp text-center">`;
+        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3  text-center">`;
         out += `<h3 class="header-item text-center  mt-3 mb-3  ">${data[key].name}</h3>`;
         //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ
         out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
@@ -167,7 +170,7 @@ function goodsOutDRINK(data) {
     out += `<div class="items row">`;
     for (var key in data) {
         out += ``;
-        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 wow fadeInUp text-center">`;
+        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 text-center">`;
         out += `<h3 class="header-item text-center  mt-3 mb-3  ">${data[key].name}</h3>`;
         //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ
         out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
@@ -199,7 +202,7 @@ function goodsOutWOK(data) {
     out += `<div class="items row">`;
     for (var key in data) {
         out += ``;
-        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 wow fadeInUp text-center">`;
+        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3  text-center">`;
         out += `<h3 class="header-item text-center  mt-3 mb-3  ">${data[key].name}</h3>`;
         //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ
         out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
@@ -230,7 +233,7 @@ function goodsOutBURGER(data) {
     out += `<div class="items row">`;
     for (var key in data) {
         out += ``;
-        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 wow fadeInUp text-center">`;
+        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 text-center">`;
         out += `<h3 class="header-item text-center  mt-3 mb-3  ">${data[key].name}</h3>`;
         //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ
         out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
@@ -265,7 +268,7 @@ function goodsOutKEBAB(data) {
     out += `<div class="items row">`;
     for (var key in data) {
         out += ``;
-        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3 wow fadeInUp text-center">`;
+        out += `<div class="card-tems col-md-3 col-9 mx-3 my-3  text-center">`;
         out += `<h3 class="header-item text-center  mt-3 mb-3  ">${data[key].name}</h3>`;
         //ЗАМЕНИТЬ НА НАСТОЯШИЕ КАРТИНКИ ИЗ JSON !! РАСКОМЕНТИРОВАТЬ
         out += `<p><img class="logoinstead" src="img/logo-instead.png" alt="${data[key].name}" ></p>`;
