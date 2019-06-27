@@ -88,7 +88,7 @@
                     </div>
                     <div class="item  wow fadeInUp ">
                         <div class="row">
-                            <img class="col-md-6 " src="img/black.jpg" alt="">
+                            <img class="col-md-6 " src="img/BLACK.jpg" alt="">
                             <div class="col-md-6 article">
                                 <h2 class=" text-center  wow fadeInUp">закажи <span>фаст фуд</span> с доставкой!</h2>
                                 <img class="icon text-center  wow fadeInUp" src="img/icons/burger.png" alt="Бургеры">
