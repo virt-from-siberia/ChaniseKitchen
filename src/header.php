@@ -1,4 +1,3 @@
-
 <link rel="icon" type="image/png" href="favicon.png" />
 <link rel="stylesheet" href="css/owl.carousel.css">
 <link rel="stylesheet" href="css/owl.theme.default.css">

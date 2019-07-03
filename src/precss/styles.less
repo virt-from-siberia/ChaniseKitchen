@@ -4,11 +4,28 @@
 @font-face {
     // название шрифта(чтобы не запутаться лучше указать название папки со шрифтом) 
     font-family: "ChinaCyr";
-    // адрес шрифта и тип 
+    // адрес шрифта и тип
     src: url("../fonts/7fonts.ru_ChinaCyr.ttf");
+
 }
 
-.reset();
+@font-face {
+    font-family: "Roboto-ThinItalic";
+    // адрес шрифта и тип
+    src: url("../fonts/Roboto-ThinItalic.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Thin";
+    // адрес шрифта и тип
+    src: url("../fonts/Roboto-Thin.ttf");
+}
+
+
+
+
+
+
 
 .wrapper {
     .wrapper();
@@ -57,7 +74,7 @@ header {
 
 .navbar {
     z-index: 99999;
-    font-family: "China2";
+    font-family: "Roboto-Thin";
 }
 
 .navbar {
@@ -87,12 +104,15 @@ header {
     margin-top: 55px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.637);
 
+    img {
+        width: 100%;
+    }
+
     .sm-block( {
-            margin-top: 80px;
+            margin-top: 158px;
         }
 
     );
-
 }
 
 
@@ -163,8 +183,9 @@ header {
 
                     p {
                         margin-top: 5px;
-                        font-size: 10px;
+                        font-size: 12px;
                         transition: 0.5s;
+                        font-family: "Roboto-Thin";
 
                         .sm-block( {
                                 font-size: 8px;
@@ -326,15 +347,8 @@ header {
                     }
                 }
             }
-
-
-
         }
-
-
     }
-
-
 }
 
 
@@ -483,9 +497,10 @@ header {
     height: 70vh;
     overflow: hidden;
     // background: url(../img/OFN9V10.jpg);
-    background: url(../img/759583.png);
-    background-attachment: fixed;
+    background: url(../img/beer23.jpg);
+    // background-attachment: fixed;
     background-size: cover;
+
 
     .sm-block( {
             height: 60vh;
@@ -493,18 +508,135 @@ header {
 
     );
 
-    .delivery-text {
-        font-size: 50px;
-        text-shadow: 2px 2px 5px black;
-        z-index: 9999;
-        color: yellow;
+    .col-left {
+        width: 30%;
+        margin-left: 10%;
+
 
         .sm-block( {
-                font-size: 20px;
+                width: 0%;
             }
 
         );
     }
+
+    .col-right {
+        width: 50%;
+        margin-right: 10%;
+        display: flex;
+        height: 70vh;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+
+
+
+
+        .sm-block( {
+                justify-content: space-evenly;
+                background-color: rgba(255, 255, 255, 0.157);
+                box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+
+            }
+
+        );
+
+
+        h3 {
+            display: block;
+            font-family: Roboto-ThinItalic;
+            font-size: 50px;
+            // text-shadow: 2px 2px 5px rgb(255, 23, 23);
+            z-index: 9999;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            text-shadow: 1px 1px 1px #000000;
+            z-index: 0;
+
+            .sm-block( {
+                    font-size: 25px;
+                    position: relative;
+                    top: -30px;
+                }
+
+            );
+
+            span {
+                color: rgb(35, 93, 55);
+                font-weight: bold;
+                font-family: Roboto-Thin;
+                font-size: 60px;
+                text-shadow: 1px 1px 1px rgb(255, 255, 255);
+
+                .sm-block( {
+                        font-size: 35px;
+                    }
+
+                );
+            }
+        }
+
+
+        img {
+
+            width: 200px;
+            display: block;
+            margin: 0 auto;
+
+            .sm-block( {
+                    width: 150px;
+                    position: relative;
+                    top: -50px;
+                }
+
+            );
+        }
+
+
+
+
+        a {
+            display: block;
+            border: 1px solid white;
+            border-radius: 40px;
+            background: rgba(12, 12, 12, 0.068);
+            transition: 1s;
+
+            .sm-block( {
+                    background: rgba(0, 0, 0, 0.192);
+                    position: relative;
+                    top: -50px;
+                }
+
+            );
+
+
+            &:hover {
+                background: rgb(60, 110, 37);
+                text-shadow: 1px 1px 1px rgb(0, 0, 0);
+            }
+
+            p {
+                display: block;
+                font-family: Roboto-Thin;
+                font-size: 35px;
+                font-weight: bold;
+                color: white;
+                padding: 5px 20px;
+                margin: 0 auto;
+
+                .sm-block( {
+                        font-size: 25px;
+                        font-weight: 100;
+                        padding: 5px 10px;
+                    }
+
+                );
+            }
+        }
+    }
+
 
 }
 
@@ -2076,3 +2208,6 @@ ul li a:hover:after {
         }
     }
 }
+
+
+//BEER ===============================================================================================================

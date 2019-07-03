@@ -98,10 +98,6 @@
                         </div>
                     </div>
 
-
-
-
-
                 </div>
             </div>
 
@@ -170,10 +166,24 @@
 
         <section>
             <div class="containerParalax">
-                <div class="wrapper">
-                    <h3 class="delivery-text text-center  mt-5 pt-5 wow fadeInUp">Закажите доставку на дом!
-                    </h3>
-                    <h3 class="delivery-text text-center  mt-5 pt-5 wow fadeInUp">8924-022-4242</h3>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-left">
+
+                        </div>
+                        <div class="col-right">
+                            <h3 class="delivery-text-header  wow fadeInUp">
+                                Закажи крафтовое пиво на розлив от <span>Craft Town</span>
+                            </h3>
+                            <img class="wow fadeInUp text-cewnter" src="img/icons/craftLogo.png" alt="Craft Town">
+                            <a class="wow fadeInUp" href="beer.php">
+                                <p>Заказать</p>
+                            </a>
+                            <!-- <p class="delivery-text-about  mt-5  wow fadeInUp">узнай о ассортименте</p>
+                            <p class="delivery-text-phone  wow fadeInUp"><i class="fas fa-phone"></i> 8924-022-4242</p> -->
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
