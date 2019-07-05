@@ -57,6 +57,9 @@ switch ($action) {
     case 'loadKEBABGoods':
         loadKEBABGoods();
         break;
+    case 'loadBEERROZLIVEGoods':
+        loadBEERROZLIVEGoods();
+        break;
     case 'showMiniCart':
         showMiniCart();
         break;

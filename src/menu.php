@@ -63,7 +63,7 @@
                 <div class="wrapper">
 
                     <!-- //GENERATE BLOCK=========================================== -->
-                    <div class="image-dishes" id="cold-dishes">
+                    <div class="image-dishes text-center" id="cold-dishes">
                         <img src="img/icons/salad.png" alt="Салаты">
                     </div>
                     <div class="goods-out-cold item-container">
@@ -72,7 +72,7 @@
 
 
 
-                    <div class="image-dishes" id="hot-dishes">
+                    <div class="image-dishes text-center" id="hot-dishes">
                         <img src="img/icons/hot.png" alt="Горячие блюда">
                     </div>
                     <div class="goods-out-hot item-container">
@@ -81,7 +81,7 @@
 
 
 
-                    <div class="image-dishes" id="pizza">
+                    <div class="image-dishes text-center" id="pizza">
                         <img src="img/icons/pizza.png" alt="пицца">
                     </div>
                     <div class="goods-out-pizza item-container">
@@ -90,28 +90,28 @@
 
 
 
-                    <div class="image-dishes" id="drink-dishes">
+                    <div class="image-dishes text-center" id="drink-dishes">
                         <img src="img/icons/drink.png" alt="Напитки">
                     </div>
                     <div class="goods-out-drink item-container">
                         <!-- //OUT++++ -->
                     </div>
 
-                    <div class="image-dishes" id="wok-dishes">
+                    <div class="image-dishes text-center" id="wok-dishes">
                         <img src="img/icons/wok.png" alt="лапша wok">
                     </div>
                     <div class="goods-out-wok item-container">
                         <!-- //OUT++++ -->
                     </div>
 
-                    <div class="image-dishes" id="burger-dishes">
+                    <div class="image-dishes text-center" id="burger-dishes">
                         <img src="img/icons/burger.png" alt="бургеры">
                     </div>
                     <div class="goods-out-burger item-container">
                         <!-- //OUT++++ -->
                     </div>
 
-                    <div class="image-dishes" id="kebab-dishes">
+                    <div class="image-dishes text-center" id="kebab-dishes">
                         <img src="img/icons/kebab.png" alt="шаурма">
                     </div>
                     <div class="goods-out-kebab item-container">

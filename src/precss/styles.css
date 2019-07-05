@@ -1153,15 +1153,12 @@ ul li a:hover:after {
   }
 }
 .menu-body-content .image-dishes {
-  width: 15%;
   opacity: 0.8;
   margin: 0 auto;
   padding-top: 20px;
 }
-@media screen and (max-width: 576px) {
-  .menu-body-content .image-dishes {
-    width: 40%;
-  }
+.menu-body-content .image-dishes img {
+  width: 200px;
 }
 .menu-body-content .item-container .item-container-header h2 {
   font-size: 35px;
@@ -1193,6 +1190,7 @@ ul li a:hover:after {
   font-size: 15px;
 }
 .menu-body-content .item-container .items .card-tems img {
+  width: 90%;
   transition: 0.6s;
 }
 .menu-body-content .item-container .items .card-tems .weight-item {
@@ -1713,4 +1711,173 @@ ul li a:hover:after {
   color: white !important;
   border: 2px solid white !important;
   text-shadow: none !important;
+}
+.header-blok {
+  background: url('../img/beer/y6MW5Ga8U80.jpg');
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-blok .header-blok-name {
+  width: 300px;
+  opacity: 0.8;
+}
+.header-blok .header-blok-logo {
+  width: 200px;
+}
+.devader {
+  display: block;
+  width: 100%;
+  height: 30px;
+  background: #09793b;
+}
+.about-beer h2 {
+  font-size: 60px;
+  margin: 20px;
+  color: #09793b;
+  font-family: "Roboto-Thin";
+}
+@media screen and (max-width: 576px) {
+  .about-beer h2 {
+    font-size: 50px;
+  }
+}
+.about-beer p {
+  font-size: 26px;
+  margin: 20px;
+  font-family: "Roboto-Thin";
+}
+@media screen and (max-width: 576px) {
+  .about-beer p {
+    font-size: 16px;
+  }
+}
+.beer-menu {
+  font-family: "Roboto-Thin";
+  background: #09793b;
+}
+.beer-menu .beer-menu-header h2 {
+  padding: 30px 0;
+  font-size: 45px;
+  font-weight: bold;
+  color: white;
+}
+.beer-menu .beer-menu-header h2 span {
+  font-size: 55px;
+  color: #69f899;
+}
+@media screen and (max-width: 576px) {
+  .beer-menu .beer-menu-header h2 span {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .beer-menu .beer-menu-header h2 {
+    font-size: 35px;
+  }
+}
+.beer-menu .beer-menu-header .beer-menu-icon {
+  width: 200px;
+}
+@media screen and (max-width: 576px) {
+  .beer-menu .beer-menu-header .beer-menu-icon {
+    width: 150px;
+  }
+}
+.beer-in-botting {
+  background: url(../img/beer/wood_BG.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Roboto-Thin";
+}
+.beer-in-botting .black-blog {
+  position: relative;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.602);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.beer-in-botting .black-blog h3 {
+  color: white;
+  font-size: 80px;
+  padding: 150px 0 20px 0;
+}
+@media screen and (max-width: 576px) {
+  .beer-in-botting .black-blog h3 {
+    font-size: 35px;
+    padding: 50px 0 20px 0;
+  }
+}
+.beer-in-botting .black-blog img {
+  display: block;
+  width: 200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 576px) {
+  .beer-in-botting .black-blog img {
+    width: 100px;
+  }
+}
+.beer-in-botting .black-blog .wrapper .row {
+  display: flex;
+  justify-content: center;
+}
+.beer-in-botting .black-blog .wrapper .row .col-md-3 {
+  border: 1px dotted rgba(255, 255, 255, 0.253);
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.212);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 15px;
+  transition: 0.7s;
+}
+.beer-in-botting .black-blog .wrapper .row .col-md-3:hover {
+  background: rgba(48, 114, 68, 0.123);
+  box-shadow: 5px 5px 15px black;
+}
+.beer-in-botting .black-blog .wrapper .row .col-md-3 .beer-name {
+  color: white;
+  font-size: 35px;
+}
+.beer-in-botting .black-blog .wrapper .row .col-md-3 .beer-img {
+  width: 100%;
+}
+.beer-in-botting .black-blog .wrapper .row .col-md-3 .beer-description {
+  color: rgba(255, 255, 255, 0.582);
+}
+.beer-in-botting .black-blog .wrapper .row .col-md-3 .beer-cost {
+  margin-top: auto;
+  color: rgba(255, 255, 0, 0.842);
+  font-size: 25px;
+  font-weight: bold;
+}
+.beer-in-botting .black-blog .wrapper .row .col-md-3 .buttons {
+  border-top: 1px dotted rgba(255, 255, 255, 0.246);
+}
+.beer-in-botting .black-blog .wrapper .row .col-md-3 .buttons button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline-style: none !important;
+  box-shadow: none;
+}
+.beer-in-botting .black-blog .wrapper .row .col-md-3 .buttons button p {
+  color: green;
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top: 10px;
+}
+.beer-in-botting .black-blog .wrapper .row .col-md-3 .buttons button .fa-plus-square {
+  color: green;
+  font-size: 40px;
+  margin: 0 15px;
 }
