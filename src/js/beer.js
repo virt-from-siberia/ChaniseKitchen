@@ -15,6 +15,7 @@ function init() {
 }
 
 function goodsOutBEERROZLIVE(data) {
+
     data = JSON.parse(data);
     var out = '';
 
@@ -23,15 +24,16 @@ function goodsOutBEERROZLIVE(data) {
     out += `<div class="wrapper mt-5">`;
     out += `<div class="row">`;
 
+
+
     for (var key in data) {
 
         out += `<div class="col-md-3 col-10 my-3">`;
         out += `<p class="beer-name text-center">${data[key].name}</p>`;
-        //======================
         out += `<img class="beer-img img-fluid" src="img/beer/beer-logo/${data[key].img}" alt="${data[key].name}">`;
-        //======================
         out += `<p class="beer-description text-center mt-3">${data[key].description}</p>`;
         out += `<p class=" beer-cost text-center">150руб 1л</p>`;
+        out += `<div class="buttons">`;
         out += `<button type="button" class="plus btn coldPlus btn-outline btn-sm" data-id="${key}">`;
         out += `<p>добавить</p>`;
         out += `<i class=" far fa-plus-square"></i>`;
@@ -41,7 +43,7 @@ function goodsOutBEERROZLIVE(data) {
     }
     out += `</div>`;
     out += `</div>`;
-    $('.goods-out-cold').html(out);
+    $('.goods-out-beerRozlive').html(out);
     $('.coldPlus').on('click', addToCart);
     $('.coldPlus').on('click', animateCart);
 }
@@ -119,6 +121,7 @@ $(document).ready(function () {
     init();
     loadCart();
     animateCart();
+    console.log(1);
 });
 
 

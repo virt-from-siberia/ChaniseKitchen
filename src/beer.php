@@ -89,6 +89,27 @@
                                 <div class="item wow fadeIn">
                                     <a data-fancybox="gallery" href="img/beer/gallery/3.jpg"><img src="img/beer/gallery/3.jpg" alt="картинка"></a>
                                 </div>
+                                <div class="item wow fadeIn">
+                                    <a data-fancybox="gallery" href="img/beer/gallery/4.jpg"><img src="img/beer/gallery/4.jpg" alt="картинка"></a>
+                                </div>
+                                <div class="item wow fadeIn">
+                                    <a data-fancybox="gallery" href="img/beer/gallery/5.jpg"><img src="img/beer/gallery/5.jpg" alt="картинка"></a>
+                                </div>
+                                <div class="item wow fadeIn">
+                                    <a data-fancybox="gallery" href="img/beer/gallery/6.jpg"><img src="img/beer/gallery/6.jpg" alt="картинка"></a>
+                                </div>
+                                <div class="item wow fadeIn">
+                                    <a data-fancybox="gallery" href="img/beer/gallery/7.jpg"><img src="img/beer/gallery/7.jpg" alt="картинка"></a>
+                                </div>
+                                <div class="item wow fadeIn">
+                                    <a data-fancybox="gallery" href="img/beer/gallery/8.jpg"><img src="img/beer/gallery/8.jpg" alt="картинка"></a>
+                                </div>
+                                <div class="item wow fadeIn">
+                                    <a data-fancybox="gallery" href="img/beer/gallery/9.jpg"><img src="img/beer/gallery/9.jpg" alt="картинка"></a>
+                                </div>
+                                <div class="item wow fadeIn">
+                                    <a data-fancybox="gallery" href="img/beer/gallery/10.jpg"><img src="img/beer/gallery/10.jpg" alt="картинка"></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -133,61 +154,11 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-3 col-10 my-3">
-                                    <p class="beer-name text-center">st. Augustine</p>
-                                    <img class="beer-img img-fluid" src="img/beer/beer-logo/augustine.jpg" alt="">
-                                    <p class="beer-description text-center mt-3">
-                                        пиво Августин отличное светлое пиво!
-                                    </p>
-                                    <p class=" beer-cost text-center">150руб 1л</p>
-
-                                    <div class="buttons">
-                                        <button type="button" class="plus btn coldPlus btn-outline btn-sm">
-                                            <p>добавить</p>
-                                            <i class=" far fa-plus-square"></i>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 col-10 my-3">
-                                    <p class="beer-name text-center">st. Augustine</p>
-                                    <img class="beer-img img-fluid" src="img/beer/beer-logo/augustine.jpg" alt="">
-                                    <p class="beer-description text-center mt-3">
-                                        пиво Августин отличное светлое пиво!
-                                    </p>
-                                    <p class=" beer-cost text-center">150руб 1л</p>
-
-                                    <div class="buttons">
-                                        <button type="button" class="plus btn coldPlus btn-outline btn-sm">
-                                            <p>добавить</p>
-                                            <i class=" far fa-plus-square"></i>
-                                        </button>
-                                    </div>
-                                </div>
-
-                                <div class="col-md-3 col-10 my-3">
-                                    <p class="beer-name text-center">st. Augustine</p>
-                                    <img class="beer-img img-fluid" src="img/beer/beer-logo/augustine.jpg" alt="">
-                                    <p class="beer-description text-center mt-3">
-                                        пиво Августин отличное светлое пиво!
-                                    </p>
-                                    <p class=" beer-cost text-center">150руб 1л</p>
-
-                                    <div class="buttons">
-                                        <button type="button" class="plus btn coldPlus btn-outline btn-sm">
-                                            <p>добавить</p>
-                                            <i class=" far fa-plus-square"></i>
-                                        </button>
-                                    </div>
-                                </div>
-
-
                             </div>
                         </div> -->
+                        <!-- //END GENERATE CONTENT======================================= -->
                     </div>
 
-
-                    <!-- //END GENERATE CONTENT======================================= -->
 
                 </div>
             </div>
