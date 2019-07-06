@@ -43,8 +43,8 @@
 
         <section>
             <div class="header-blok">
-                <img class="header-blok-name" src="img/beer/craft-logo.png" alt="craft-town">
-                <img class="header-blok-logo" src="img/icons/craftLogo.png" alt="craft-town-logo">
+                <img class="header-blok-name wow fadeInUp" src="img/beer/craft-logo.png" alt="craft-town">
+                <img class="header-blok-logo wow fadeInUp" src="img/icons/craftLogo.png" alt="craft-town-logo">
             </div>
 
             <div class="devader"></div>
@@ -55,24 +55,41 @@
                 <div class="container">
                     <div class="row no-gutters">
                         <div class="col-md-6 col-sm-12">
-                            <h2 class="text-center">Craft Town</h2>
-                            <p>Это в первую очередь то место, где вы можете насладиться крафтовым пивом <span>собственного производства </span> с большим количеством снеков и закусок.</p>
+                            <h2 class="text-center wow fadeInUp">Craft Town</h2>
+                            <p class="wow fadeInUp">Это в первую очередь то место, где вы можете насладиться крафтовым пивом <span>собственного производства </span> с большим количеством снеков и закусок.</p>
                         </div>
-                        <div class="col-md-6 col-sm-12 ">
+                        <div class="col-md-6 col-sm-12 wow fadeInUp ">
                             <img class="img-fluid" src="img/beer/405948.jpg" alt="picture">
                         </div>
-                        <div class="col-md-6 col-sm-12">
+                        <div class="col-md-6 col-sm-12 wow fadeInUp">
                             <img class="img-fluid" src="img/beer/bGxh4hkDAM8.jpg" alt="picture">
                         </div>
-                        <div class="col-md-6 col-sm-12 ">
+                        <div class="col-md-6 col-sm-12 wow fadeInUp">
                             <p>Мы очень хотим, чтобы наш паб стал для вас вторым домом, как уже стал для нас. Вот почему мы не ограничились первоклассным пивом и барной стойкой, а создали по-настоящему уютное пространство, куда вы могли бы приходить с друзьями и отлично проводить время</p>
                         </div>
-                        <div class="col-md-6 col-sm-12 ">
+                        <div class="col-md-6 col-sm-12 wow fadeInUp">
                             <p>Производится на мощностях читинского производителя пива, после доукомплектования производства собственным специальным оборудованием, исключительно из отборного сырья, под
                                 личным присмотром технологов пивоварни.</p>
                         </div>
-                        <div class="col-md-6 col-sm-12 ">
+                        <div class="col-md-6 col-sm-12 wow fadeInUp">
                             <img class="img-fluid" src="img/beer/home-2-offer.png" alt="picture">
+                        </div>
+                        <div class="col-md-6 col-sm-12 wow fadeInUp">
+                            <video class="" width="100%" loop controls controlsList="nodownload" autoplay/muted> <source src="video/Craft Town.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <div class="owl-carousel slide-five owl-theme">
+                                <div class="item wow fadeIn">
+                                    <a data-fancybox="gallery" href="img/beer/gallery/1.jpg"><img src="img/beer/gallery/1.jpg" alt="картинка"></a>
+                                </div>
+                                <div class="item wow fadeIn">
+                                    <a data-fancybox="gallery" href="img/beer/gallery/2.jpg"><img src="img/beer/gallery/2.jpg" alt="картинка"></a>
+                                </div>
+                                <div class="item wow fadeIn">
+                                    <a data-fancybox="gallery" href="img/beer/gallery/3.jpg"><img src="img/beer/gallery/3.jpg" alt="картинка"></a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -82,7 +99,7 @@
         <section>
             <div class="beer-menu">
                 <div class="beer-menu-header">
-                    <h2 class="text-center mt-3">Заказывайте пиво с доставкой на дом!
+                    <h2 class="text-center pt-3">Заказывайте пиво с доставкой на дом!
                         от <br> <span>CRAFT-TOWN</span>
                     </h2>
                     <div class="text-center pb-3">
@@ -176,13 +193,25 @@
             </div>
         </section>
 
+        <section>
+            <div class="location">
+                <div class="container">
+                    <div class="row no-gutters">
+                        <div class="col-md-6 col-sm-12">
+                            <h3>Мы находимся по адресу: ул. Анохина, 93</h3>
+                            <p>Наш номер: +7 (996) 020-40-97☎</p>
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <img class="img-fluid" src="img/craft-town-map.jpg" alt="craft-town">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
 
     </main>
-
-
-
-
 
 
 
