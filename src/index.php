@@ -225,6 +225,22 @@
 
                 <div class="container">
                     <div class="row justify-content-center">
+
+                        <div class="col-md-6 col-10 mt-3 mb-3 wow fadeInUp">
+                            <a href="menu.php#wok-dishes">
+                                <div class="box">
+                                    <div class="imgBox">
+                                        <img src="./img/beer.jpg" alt="пиво">
+                                    </div>
+                                    <div class="content">
+                                        <p class="pepe text-center">пиво</p>
+                                        <h2>пиво</h2>
+                                        <p class="pe">в розлив от craft town</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
                         <div class="col-md-6 col-10 mt-3 mb-3 wow fadeInUp">
                             <a href="menu.php#hot-dishes">
                                 <div class="box">

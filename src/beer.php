@@ -165,12 +165,19 @@
         </section>
 
         <section>
+            <div class="devader"></div>
             <div class="location">
                 <div class="container">
                     <div class="row no-gutters">
                         <div class="col-md-6 col-sm-12">
-                            <h3>Мы находимся по адресу: ул. Анохина, 93</h3>
-                            <p>Наш номер: +7 (996) 020-40-97☎</p>
+                            <div class="text-center wow fadeIn">
+                                <i class=" fas fa-map-marked-alt"></i>
+                            </div>
+                            <h3 class="wow fadeIn">Мы находимся по адресу: ул. Анохина, 93</h3>
+                            <div class="wow fadeIn text-center">
+                                <i class=" fas fa-phone"></i>
+                            </div>
+                            <p class="wow fadeIn">Наш номер: <br> <span>+7 (996) 020-40-97☎</span></p>
                         </div>
                         <div class="col-md-6 col-sm-12">
                             <img class="img-fluid" src="img/craft-town-map.jpg" alt="craft-town">
