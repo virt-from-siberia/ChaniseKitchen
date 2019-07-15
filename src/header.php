@@ -64,7 +64,7 @@
                 <div class="col-2 nav-manu-link-item">
                     <a href="menu.php#hot-dishes">
                         <img src="img/icons/hot.png" alt="горячие блюда">
-                        <p class="text-center">Горячие блюда</p>
+                        <p class="text-center">Горячие</p>
                     </a>
                 </div>
                 <div class="col-2 nav-manu-link-item">
@@ -88,7 +88,7 @@
                 <div class="col-2 nav-manu-link-item">
                     <a href="menu.php#wok-dishes">
                         <img src="img/icons/wok.png" alt="лапша wok">
-                        <p class="text-center"> лапша wok</p>
+                        <p class="text-center"> wok</p>
                     </a>
                 </div>
 

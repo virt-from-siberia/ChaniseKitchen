@@ -227,7 +227,7 @@
                     <div class="row justify-content-center">
 
                         <div class="col-md-6 col-10 mt-3 mb-3 wow fadeInUp">
-                            <a href="menu.php#wok-dishes">
+                            <a href="beer.php#beer">
                                 <div class="box">
                                     <div class="imgBox">
                                         <img src="./img/beer.jpg" alt="пиво">

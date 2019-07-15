@@ -127,6 +127,7 @@ header {
     width: 100%;
 
 
+
     .container {
 
         .row {
@@ -546,7 +547,7 @@ header {
         h3 {
             display: block;
             font-family: Roboto-ThinItalic;
-            font-size: 50px;
+            font-size: 40px;
             // text-shadow: 2px 2px 5px rgb(255, 23, 23);
             z-index: 9999;
             color: rgb(255, 255, 255);
@@ -555,9 +556,9 @@ header {
             z-index: 0;
 
             .sm-block( {
-                    font-size: 25px;
+                    font-size: 20px;
                     position: relative;
-                    top: -30px;
+                    top: -10px;
                 }
 
             );
@@ -1809,6 +1810,7 @@ ul li a:hover:after {
 
                                 .description-order {
                                     padding: 10px;
+                                    font-size: 14px;
 
                                     .sm-block( {
                                             font-size: 14px;
@@ -2208,22 +2210,74 @@ ul li a:hover:after {
 //BEER ===============================================================================================================
 
 .header-blok {
-    background: url('../img/beer/y6MW5Ga8U80.jpg');
-    background-size: cover;
-    height: 500px;
+    // background: url('../img/beer/y6MW5Ga8U80.jpg');
+    // background-size: cover;
+    // height: 500px;
+
+    height: 65vh;
+    position: relative;
+    overflow: hidden;
+    background: rgb(54, 54, 54);
+
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/beer/y6MW5Ga8U80.jpg) center no-repeat;
+        background-size: cover;
+        // opacity: 0.7;
+        animation: transformBeer 15s infinite;
+        background-position-y: 10px;
+
+        .sm-block( {
+                height: 65vh;
+            }
+
+        );
+    }
+
     .header-blok-name {
         width: 300px;
         opacity: 0.8;
+        z-index: 1;
+
+        .sm-block( {
+                width: 200px;
+            }
+
+        );
 
     }
 
     .header-blok-logo {
         width: 200px;
+        z-index: 1;
+
+        .sm-block( {
+                width: 150px;
+            }
+
+        );
+    }
+}
+
+
+@keyframes transformBeer {
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
 
@@ -2295,14 +2349,14 @@ ul li a:hover:after {
                 color: rgb(105, 248, 153);
 
                 .sm-block( {
-                        font-size: 45px;
+                        font-size: 40px;
                     }
 
                 );
             }
 
             .sm-block( {
-                    font-size: 35px;
+                    font-size: 30px;
                 }
 
             );
@@ -2320,11 +2374,49 @@ ul li a:hover:after {
     }
 }
 
+.about-delivery-beer {
+    font-family: "Roboto-Thin";
+    background: rgb(9, 121, 59);
+
+
+    h3 {
+        margin: 0;
+        padding: 50px;
+        color: white;
+        font-size: 50px;
+
+        span {
+            font-size: 45px;
+            color: rgb(105, 248, 153);
+            font-weight: bold;
+
+            .sm-block( {
+                    font-size: 35px;
+                }
+
+            );
+        }
+
+        .sm-block( {
+                font-size: 30px;
+            }
+
+        );
+    }
+}
+
+
 .beer-in-botting {
     background: url(../img/beer/wood_BG.jpg);
     background-attachment: fixed;
     background-size: cover;
     font-family: "Roboto-Thin";
+
+    .sm-block( {
+            background: rgb(47, 47, 47);
+        }
+
+    );
 
 
     .black-blog {
@@ -2398,6 +2490,13 @@ ul li a:hover:after {
                     .beer-description {
 
                         color: rgba(255, 255, 255, 0.582);
+                        font-size: 15px;
+
+                        .sm-block( {
+                                font-size: 12px;
+                            }
+
+                        );
 
                     }
 
@@ -2458,8 +2557,14 @@ ul li a:hover:after {
 
             .fa-map-marked-alt {
                 font-size: 50px;
-                color: green;
+                color: yellow;
                 text-shadow: 1px 1px 3px black;
+
+                .sm-block( {
+                        font-size: 25px;
+                    }
+
+                );
             }
 
             h3 {
@@ -2468,12 +2573,24 @@ ul li a:hover:after {
                 text-align: center;
                 color: white;
                 text-shadow: 1px 1px 3px black;
+
+                .sm-block( {
+                        font-size: 25px;
+                    }
+
+                );
             }
 
             .fa-phone {
                 font-size: 50px;
-                color: green;
+                color: yellow;
                 text-shadow: 1px 1px 3px black;
+
+                .sm-block( {
+                        font-size: 25px;
+                    }
+
+                );
             }
 
             p {
@@ -2483,12 +2600,22 @@ ul li a:hover:after {
                 color: white;
                 text-shadow: 1px 1px 3px black;
 
+                .sm-block( {
+                        font-size: 25px;
+                    }
+
+                );
+
                 span {
-                    color: green;
+                    color: yellow;
                 }
             }
         }
-
     }
+}
 
+
+#map {
+    height: 400px;
+    width: 100%;
 }

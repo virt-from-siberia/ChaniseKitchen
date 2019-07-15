@@ -11,6 +11,20 @@
 
 
     <?php require "header.php" ?>
+    <style>
+        body {
+            background: black !important;
+        }
+
+        .nav-manu-link {
+            background: rgba(22, 22, 22, 0.8) !important;
+        }
+
+        .navbar {
+            opacity: 0.9;
+            background: rgba(22, 22, 22, 0.8) !important;
+        }
+    </style>
 
     <main>
 
@@ -42,7 +56,7 @@
         </div>
 
         <section>
-            <div class="header-blok">
+            <div class="header-blok pt-1">
                 <img class="header-blok-name wow fadeInUp" src="img/beer/craft-logo.png" alt="craft-town">
                 <img class="header-blok-logo wow fadeInUp" src="img/icons/craftLogo.png" alt="craft-town-logo">
             </div>
@@ -90,9 +104,6 @@
                                     <a data-fancybox="gallery" href="img/beer/gallery/3.jpg"><img src="img/beer/gallery/3.jpg" alt="картинка"></a>
                                 </div>
                                 <div class="item wow fadeIn">
-                                    <a data-fancybox="gallery" href="img/beer/gallery/4.jpg"><img src="img/beer/gallery/4.jpg" alt="картинка"></a>
-                                </div>
-                                <div class="item wow fadeIn">
                                     <a data-fancybox="gallery" href="img/beer/gallery/5.jpg"><img src="img/beer/gallery/5.jpg" alt="картинка"></a>
                                 </div>
                                 <div class="item wow fadeIn">
@@ -120,14 +131,21 @@
         <section>
             <div class="beer-menu">
                 <div class="beer-menu-header">
-                    <h2 class="text-center pt-3">Заказывайте пиво с доставкой на дом!
+                    <h2 class="text-center pt-3 wow fadeIn">Заказывайте пиво с доставкой на дом!
                         от <br> <span>CRAFT-TOWN</span>
                     </h2>
                     <div class="text-center pb-3">
-                        <img class="beer-menu-icon" src="img/icons/beer-delivery-icon.png" alt="beer-delivery">
+                        <img class="wow fadeIn beer-menu-icon" src="img/icons/beer-delivery-icon.png" alt="beer-delivery">
                     </div>
                 </div>
             </div>
+
+            <div class="about-delivery-beer">
+                <div class="wrapper">
+                    <h3 class="text-center wow fadeIn">Бесплатная доставка от<span> 1000 </span>рублей по городу и от <span>1500</span> на КСК и ГРЭС</h3>
+                </div>
+            </div>
+
 
 
             <div class="beer-in-botting">
@@ -136,7 +154,7 @@
                     <img class="" src="img/icons/beer.png" alt="">
 
 
-                    <div class="goods-out-beerRozlive">
+                    <div class="goods-out-beerRozlive" id="beer">
                         <!-- //GENERATE CONTENT======================================= -->
                         <!-- <div class="wrapper mt-5">
                             <div class="row ">
@@ -171,16 +189,16 @@
                     <div class="row no-gutters">
                         <div class="col-md-6 col-sm-12">
                             <div class="text-center wow fadeIn">
-                                <i class=" fas fa-map-marked-alt"></i>
+                                <i class="mt-3 fas fa-map-marked-alt"></i>
                             </div>
                             <h3 class="wow fadeIn">Мы находимся по адресу: ул. Анохина, 93</h3>
                             <div class="wow fadeIn text-center">
                                 <i class=" fas fa-phone"></i>
                             </div>
-                            <p class="wow fadeIn">Наш номер: <br> <span>+7 (996) 020-40-97☎</span></p>
+                            <p class="wow fadeIn">Наш номер: <br> <span>☎ +7 (996) 020-40-97 </span></p>
                         </div>
                         <div class="col-md-6 col-sm-12">
-                            <img class="img-fluid" src="img/craft-town-map.jpg" alt="craft-town">
+                            <img class="img-fluid" src="img/beer/gallery/location.jpg" alt="craft-town">
                         </div>
                     </div>
                 </div>
@@ -188,9 +206,177 @@
         </section>
 
 
-
+        <div id="map"></div>
     </main>
 
 
+    <!-- GOOGLE MAPS API AIzaSyC08aRPYGcdqBEhkIQUmVMCzdmKDRIOta0 -->
+
+    <script>
+        function initMap() {
+            var pos = {
+                lat: 52.032764,
+                lng: 113.495392
+            }
+            var opt = {
+                center: pos,
+                zoom: 15,
+                styles: [{
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#212121"
+                        }]
+                    },
+                    {
+                        "elementType": "labels.icon",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    },
+                    {
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#757575"
+                        }]
+                    },
+                    {
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#212121"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#757575"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative.country",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#9e9e9e"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative.land_parcel",
+                        "stylers": [{
+                            "visibility": "off"
+                        }]
+                    },
+                    {
+                        "featureType": "administrative.locality",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#bdbdbd"
+                        }]
+                    },
+                    {
+                        "featureType": "poi",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#757575"
+                        }]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#181818"
+                        }]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#616161"
+                        }]
+                    },
+                    {
+                        "featureType": "poi.park",
+                        "elementType": "labels.text.stroke",
+                        "stylers": [{
+                            "color": "#1b1b1b"
+                        }]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "geometry.fill",
+                        "stylers": [{
+                            "color": "#2c2c2c"
+                        }]
+                    },
+                    {
+                        "featureType": "road",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#8a8a8a"
+                        }]
+                    },
+                    {
+                        "featureType": "road.arterial",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#373737"
+                        }]
+                    },
+                    {
+                        "featureType": "road.highway",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#3c3c3c"
+                        }]
+                    },
+                    {
+                        "featureType": "road.highway.controlled_access",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#4e4e4e"
+                        }]
+                    },
+                    {
+                        "featureType": "road.local",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#616161"
+                        }]
+                    },
+                    {
+                        "featureType": "transit",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#757575"
+                        }]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "geometry",
+                        "stylers": [{
+                            "color": "#000000"
+                        }]
+                    },
+                    {
+                        "featureType": "water",
+                        "elementType": "labels.text.fill",
+                        "stylers": [{
+                            "color": "#3d3d3d"
+                        }]
+                    }
+                ]
+            }
+            var map = new google.maps.Map(document.getElementById("map"), opt);
+            var marker = new google.maps.Marker({
+                position: pos,
+                map: map,
+                title: "craft-town",
+                icon: 'img/icons/yellow-dot-craft-town.png'
+            });
+
+        }
+    </script>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC08aRPYGcdqBEhkIQUmVMCzdmKDRIOta0&callback=initMap" async defer></script>
 
     <?php require "footer-beer.php" ?>

@@ -505,7 +505,7 @@ header {
 .containerParalax .col-right h3 {
   display: block;
   font-family: Roboto-ThinItalic;
-  font-size: 50px;
+  font-size: 40px;
   z-index: 9999;
   color: #ffffff;
   text-align: center;
@@ -514,9 +514,9 @@ header {
 }
 @media screen and (max-width: 576px) {
   .containerParalax .col-right h3 {
-    font-size: 25px;
+    font-size: 20px;
     position: relative;
-    top: -30px;
+    top: -10px;
   }
 }
 .containerParalax .col-right h3 span {
@@ -1412,6 +1412,7 @@ ul li a:hover:after {
 }
 .bacground-gredient .cartbg .wrapper .cart-body .goods-out-cold .cart-orders-body .col-md-3 .background-orders .description-order {
   padding: 10px;
+  font-size: 14px;
 }
 @media screen and (max-width: 576px) {
   .bacground-gredient .cartbg .wrapper .cart-body .goods-out-cold .cart-orders-body .col-md-3 .background-orders .description-order {
@@ -1713,20 +1714,58 @@ ul li a:hover:after {
   text-shadow: none !important;
 }
 .header-blok {
-  background: url('../img/beer/y6MW5Ga8U80.jpg');
-  background-size: cover;
-  height: 500px;
+  height: 65vh;
+  position: relative;
+  overflow: hidden;
+  background: #363636;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
+.header-blok::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../img/beer/y6MW5Ga8U80.jpg) center no-repeat;
+  background-size: cover;
+  animation: transformBeer 15s infinite;
+  background-position-y: 10px;
+}
+@media screen and (max-width: 576px) {
+  .header-blok::after {
+    height: 65vh;
+  }
+}
 .header-blok .header-blok-name {
   width: 300px;
   opacity: 0.8;
+  z-index: 1;
+}
+@media screen and (max-width: 576px) {
+  .header-blok .header-blok-name {
+    width: 200px;
+  }
 }
 .header-blok .header-blok-logo {
   width: 200px;
+  z-index: 1;
+}
+@media screen and (max-width: 576px) {
+  .header-blok .header-blok-logo {
+    width: 150px;
+  }
+}
+@keyframes transformBeer {
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 .devader {
   display: block;
@@ -1734,11 +1773,16 @@ ul li a:hover:after {
   height: 30px;
   background: #09793b;
 }
+.about-beer {
+  background: url(../img/bg_4.jpg);
+  background-attachment: fixed;
+}
 .about-beer h2 {
   font-size: 60px;
   margin: 20px;
   color: #09793b;
   font-family: "Roboto-Thin";
+  text-shadow: 2px 2px 5px black;
 }
 @media screen and (max-width: 576px) {
   .about-beer h2 {
@@ -1749,11 +1793,16 @@ ul li a:hover:after {
   font-size: 26px;
   margin: 20px;
   font-family: "Roboto-Thin";
+  color: rgba(255, 255, 255, 0.782);
+  text-shadow: 1px 1px 3px black;
 }
 @media screen and (max-width: 576px) {
   .about-beer p {
     font-size: 16px;
   }
+}
+.about-beer .item {
+  box-shadow: 5px 5px 15px black;
 }
 .beer-menu {
   font-family: "Roboto-Thin";
@@ -1771,12 +1820,12 @@ ul li a:hover:after {
 }
 @media screen and (max-width: 576px) {
   .beer-menu .beer-menu-header h2 span {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 576px) {
   .beer-menu .beer-menu-header h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 .beer-menu .beer-menu-header .beer-menu-icon {
@@ -1787,11 +1836,41 @@ ul li a:hover:after {
     width: 150px;
   }
 }
+.about-delivery-beer {
+  font-family: "Roboto-Thin";
+  background: #09793b;
+}
+.about-delivery-beer h3 {
+  margin: 0;
+  padding: 50px;
+  color: white;
+  font-size: 50px;
+}
+.about-delivery-beer h3 span {
+  font-size: 45px;
+  color: #69f899;
+  font-weight: bold;
+}
+@media screen and (max-width: 576px) {
+  .about-delivery-beer h3 span {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .about-delivery-beer h3 {
+    font-size: 30px;
+  }
+}
 .beer-in-botting {
   background: url(../img/beer/wood_BG.jpg);
   background-attachment: fixed;
   background-size: cover;
   font-family: "Roboto-Thin";
+}
+@media screen and (max-width: 576px) {
+  .beer-in-botting {
+    background: #2f2f2f;
+  }
 }
 .beer-in-botting .black-blog {
   position: relative;
@@ -1850,6 +1929,12 @@ ul li a:hover:after {
 }
 .beer-in-botting .black-blog .wrapper .row .col-md-3 .beer-description {
   color: rgba(255, 255, 255, 0.582);
+  font-size: 15px;
+}
+@media screen and (max-width: 576px) {
+  .beer-in-botting .black-blog .wrapper .row .col-md-3 .beer-description {
+    font-size: 12px;
+  }
 }
 .beer-in-botting .black-blog .wrapper .row .col-md-3 .beer-cost {
   margin-top: auto;
@@ -1880,4 +1965,64 @@ ul li a:hover:after {
   color: green;
   font-size: 40px;
   margin: 0 15px;
+}
+.location {
+  font-family: "Roboto-Thin";
+  background: url(../img/bg_4.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.location .row .col-md-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.location .row .col-md-6 .fa-map-marked-alt {
+  font-size: 50px;
+  color: yellow;
+  text-shadow: 1px 1px 3px black;
+}
+@media screen and (max-width: 576px) {
+  .location .row .col-md-6 .fa-map-marked-alt {
+    font-size: 25px;
+  }
+}
+.location .row .col-md-6 h3 {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+@media screen and (max-width: 576px) {
+  .location .row .col-md-6 h3 {
+    font-size: 25px;
+  }
+}
+.location .row .col-md-6 .fa-phone {
+  font-size: 50px;
+  color: yellow;
+  text-shadow: 1px 1px 3px black;
+}
+@media screen and (max-width: 576px) {
+  .location .row .col-md-6 .fa-phone {
+    font-size: 25px;
+  }
+}
+.location .row .col-md-6 p {
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+@media screen and (max-width: 576px) {
+  .location .row .col-md-6 p {
+    font-size: 25px;
+  }
+}
+.location .row .col-md-6 p span {
+  color: yellow;
+}
+#map {
+  height: 400px;
+  width: 100%;
 }

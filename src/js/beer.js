@@ -32,7 +32,7 @@ function goodsOutBEERROZLIVE(data) {
         out += `<p class="beer-name text-center">${data[key].name}</p>`;
         out += `<img class="beer-img img-fluid" src="img/beer/beer-logo/${data[key].img}" alt="${data[key].name}">`;
         out += `<p class="beer-description text-center mt-3">${data[key].description}</p>`;
-        out += `<p class=" beer-cost text-center">150руб 1л</p>`;
+        out += `<p class=" beer-cost text-center">${data[key].cost} 1л</p>`;
         out += `<div class="buttons">`;
         out += `<button type="button" class="plus btn coldPlus btn-outline btn-sm" data-id="${key}">`;
         out += `<p>добавить</p>`;

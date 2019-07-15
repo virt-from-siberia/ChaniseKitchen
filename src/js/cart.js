@@ -62,6 +62,11 @@ function showCart() {
             $('.minus').on('click', minusGoods);
             $('.plus').on('click', plusGoods);
             $('.common-cost-orders-summ').html(commonSum + 'руб');
+            $('p').each(function () {
+                if ($(this).text().length > 100) {
+                    $(this).text($(this).text().substring(0, 50) + '…');
+                }
+            });
         });
 
 }
@@ -157,10 +162,19 @@ function sendForm() {
     }
 }
 
+function maxlength() {
+    $('p').each(function () {
+        if ($(this).text().length > 60) {
+            $(this).text($(this).text().substring(0, 80) + '…');
+        }
+    });
+}
 
 
 $(document).ready(function () {
 
     loadCart();
     $('.send-form').on('click', sendForm);
+    maxlength();
+
 });
